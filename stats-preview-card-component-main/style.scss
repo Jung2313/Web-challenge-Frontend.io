@@ -1,0 +1,159 @@
+//Variables
+//main background
+$veryDarkBlue:hsl(233, 47%, 7%);
+//card background
+$darkDesaturatedBlue: hsl(244, 38%, 16%);
+//accent
+$softViolet:hsl(277, 64%, 61%);
+
+//# main heading , stats
+$white: hsl(0, 0%, 100%);
+//main paragraph
+$slightlyTransparentWhite:hsla(0, 0%, 100%, 0.75);
+//stat headings
+$secondWhiteTransparentSlightly:hsla(0, 0%, 100%, 0.6);
+
+$fontSize: 15px;
+
+$fontFamily1: 'Inter', sans-serif;
+$fontFamily2: 'Lexend Deca', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $veryDarkBlue;
+    color:$white
+}
+
+.container{
+    background-color: $darkDesaturatedBlue;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(50px);
+    margin-bottom: 5rem;
+    
+    
+    .content__img{
+    width: 100%;
+    min-height: 20rem;
+    background:linear-gradient(rgba(103, 4, 128, 0.6),rgba(103, 4, 128, 0.6)), url(images/image-header-mobile.jpg)center center ;
+    background-size: cover;
+    border-radius: 10px 10px 0 0 ;
+    }
+    .content__main{
+        width: 90%;
+        margin: 0 auto;
+      
+        .main__text{
+           margin: 1rem;
+            #h2{
+               font-family: $fontFamily1; 
+
+            }
+            #p{
+                margin-top: 1rem;
+                font-family:$fontFamily2;
+                color: $slightlyTransparentWhite;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .main__follow{
+          padding-bottom: 1rem;
+            .follow{
+                margin-bottom: 2rem;
+               .p2{
+            font-size: 1.5rem;
+            font-family: $fontFamily1;
+            font-weight: bold;
+            }  
+            .small{
+               
+                font-size: 12px;
+                font-family:$fontFamily2;
+                color: $slightlyTransparentWhite;
+                text-transform: uppercase;
+                padding-bottom: 2rem;
+                }   
+            }
+            
+        }
+        
+    }
+   
+
+}
+
+//media queries Mobile First
+
+@media (min-width:700px){
+
+    .container{
+        display: flex;
+        transform: translateY(120px);
+        text-align:left;
+    }
+    .container .content__img {
+        width: 100%;
+        min-height: 20rem;
+        background: linear-gradient(rgba(103, 4, 128, 0.6), rgba(103, 4, 128, 0.6)), url(images/image-header-desktop.jpg) center ;
+        background-repeat: no-repeat;
+        border-radius: 0 10px 10px 0; 
+         transform: translateX(100%);
+         background-size:cover;
+         
+
+    }
+    .container .content__main {
+        transform: translateX(-105%)
+
+    }
+    .container .content__main .main__follow {
+        display: flex;
+        padding-bottom: 0;
+        margin: 20px 20px 0 -7px
+
+    }
+    .container .content__main .main__follow .follow {
+        margin-right: 1rem;
+    }
+    .main__text{
+        padding-top: 1.5rem;
+    }
+
+}
+
+@media (min-width:800px){
+    .container .content__main .main__follow {
+        margin: 20px 20px 0 23px
+
+    }
+    .main__text{
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:1050px){
+    .container {
+        height: 22rem;
+    }
+    .container .content__main .main__follow {
+        margin: 20px 20px 0 53px;
+    }
+    .main__text{
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width:1200px){
+    .container {
+      width: 60%;
+    }
+    .main__text{
+        padding-top: 1.5rem;
+    }
+   
+}
