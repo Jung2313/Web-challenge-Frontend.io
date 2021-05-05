@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #6565e7;
+  background-image: linear-gradient(43deg, #6565e7 8%, #af67e9 100%);
+  font-family: "Kumbh Sans", sans-serif;
+  padding-bottom: 1rem;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  background-color: #fff;
+  margin-top: 8rem;
+  border-radius: 30px;
+  padding-bottom: 2rem;
+  margin-right: 1rem;
+  min-width: 375px;
+}
+.container .container__img {
+  height: 7rem;
+}
+.container .container__img .ilustration {
+  display: block;
+  position: relative;
+  transform: translate(11%, -55%);
+}
+.container .container__img .ilustration1 {
+  display: block;
+  position: relative;
+  transform: translate(21%, -190%);
+}
+.container .container__context {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.container .container__context #h2 {
+  text-align: center;
+}
+.container .container__context .context__faq {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .container__context .context__faq .faquestion {
+  width: 90%;
+  color: #4a4b5e;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #787887;
+}
+.container .container__context .context__faq .faquestion:hover {
+  color: #f47c57;
+}
+.container .container__context .context__faq .faquestion.color {
+  color: #1d1e35;
+  font-weight: bold;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.container .container__context .context__faq .down {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.container .container__context .context__faq .down .fas {
+  color: #f47c57;
+}
+.container .container__context .context__faq .faqanswer {
+  display: none;
+}
+.container .container__context .context__faq .faqanswer.appear {
+  display: block;
+  color: #787887;
+  font-size: 12px;
+  border-bottom: 1px solid #787887;
+  padding-bottom: 1rem;
+  width: 89%;
+  margin-right: 1.6rem;
+}
+
+@media (min-width: 450px) {
+  .container .container__img .ilustration {
+    transform: translate(22%, -55%);
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(36%, -190%);
+  }
+  .container .container__context .context__faq {
+    justify-content: inherit;
+  }
+}
+@media (min-width: 500px) {
+  .container .container__img .ilustration {
+    transform: translate(30%, -55%);
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(45%, -190%);
+  }
+  .container .container__context .context__faq .faqanswer.appear {
+    font-size: 14px;
+  }
+}
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 625px) {
+  .container .container__img .ilustration {
+    transform: translate(40%, -55%);
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(57%, -190%);
+  }
+  .container .container__context {
+    font-size: 15px;
+  }
+}
+@media (min-width: 675px) {
+  .container {
+    width: 73%;
+  }
+}
+@media (min-width: 740px) {
+  .container .container__img .ilustration {
+    transform: translate(50%, -55%);
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(65%, -190%);
+  }
+  .container .container__context {
+    font-size: 16px;
+  }
+  .container .container__context .context__faq .faqanswer.appear {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+    overflow-y: hidden;
+  }
+
+  .container {
+    display: flex;
+    margin-right: 0;
+    transform: translateY(-60px);
+  }
+  .container .container__img {
+    height: auto;
+    width: 42%;
+  }
+  .container .container__img .ilustration {
+    transform: translate(-17%, 60%);
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(-7%, 32%);
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+  .container .container__img {
+    display: block;
+    width: 49%;
+  }
+  .container .container__img .ilustration {
+    transform: translate(-18%, 33%);
+    width: 389px;
+  }
+  .container .container__img .ilustration1 {
+    transform: translate(-15%, -34%);
+    width: 389px;
+  }
+  .container .container__context {
+    display: block;
+    width: 79%;
+  }
+}
+@media (min-width: 1150px) {
+  .container .container__img {
+    width: 73%;
+  }
+  .container .container__context .context__faq {
+    width: 75%;
+  }
+  .container .container__context #h2 {
+    width: 76%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
