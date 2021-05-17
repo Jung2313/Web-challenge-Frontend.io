@@ -1,0 +1,105 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #e5eff5;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  transform: translateY(15px);
+  border-radius: 20px;
+}
+
+.content__num1 {
+  background-color: #fff;
+  padding: 1.2rem;
+}
+.content__num1 #h2 {
+  color: #2ab2af;
+}
+.content__num1 #h3 {
+  color: #c0df34;
+}
+.content__num1 #p {
+  color: #98a6bd;
+  letter-spacing: 1px;
+}
+
+.content__num2 {
+  color: #fff;
+}
+.content__num2 .content__monthly {
+  background-color: #2ab2af;
+  padding: 1.2rem;
+}
+.content__num2 .content__monthly .content__dollar {
+  display: flex;
+}
+.content__num2 .content__monthly .content__dollar #dolar {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
+.content__num2 .content__monthly .content__dollar #small {
+  margin: 0;
+  padding: 0;
+  transform: translateY(15px) translateX(10px);
+  font-size: 1rem;
+  color: #e5eff5;
+}
+.content__num2 .content__monthly #button {
+  width: 100%;
+  height: 3rem;
+  background-color: #c0df34;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+}
+.content__num2 .content__whyus {
+  background-color: #4abebd;
+  padding: 1.2rem;
+  margin-bottom: 5rem;
+}
+.content__num2 .content__whyus .ancho {
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+    transform: translateY(60px);
+  }
+
+  .content__num2 {
+    display: flex;
+  }
+
+  .content__num2 .content__monthly {
+    width: 50%;
+  }
+
+  .content__num2 .content__whyus {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 65%;
+    transform: translateY(60px);
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
