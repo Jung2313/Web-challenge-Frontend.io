@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-mobile.svg);
+  background-color: #674baf;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container .plain {
+  margin-top: 2rem;
+}
+.container .plain__huddle {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .plain__huddle .fa-comment-dots {
+  font-size: 1.6rem;
+  color: white;
+  margin-right: 5px;
+}
+.container .plain__huddle #h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.container .plain__img {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+.container .plain__img .ilustracion {
+  margin-left: 1rem;
+  width: 80%;
+}
+.container .context {
+  margin-top: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.container .context__text .parapho {
+  margin-top: 1rem;
+}
+.container .context__text button {
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #674baf;
+}
+.container .context__text button:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+.container .context__socialmedia .fab {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  padding: 9px;
+  margin-right: 5px;
+}
+.container .context__socialmedia .fab:hover {
+  background-color: #e882e8;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    transform: translateY(50px);
+  }
+  .container .plain__img .ilustracion {
+    width: 92%;
+  }
+  .container .context {
+    margin-top: 6rem;
+    text-align: left;
+    width: 54%;
+    font-size: 15px;
+  }
+  .container .context__socialmedia .fab {
+    position: relative;
+    right: -123px;
+    bottom: 0;
+  }
+}
+@media (min-width: 1050px) {
+  .container {
+    transform: translateY(0px);
+  }
+  .container .context {
+    margin-top: 9rem;
+  }
+  .container .context__socialmedia .fab {
+    right: -279px;
+  }
+}
+@media (min-width: 1300px) {
+  .container .context__socialmedia .fab {
+    right: -450px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
