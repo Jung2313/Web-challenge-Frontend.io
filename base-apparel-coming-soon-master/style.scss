@@ -1,0 +1,206 @@
+$DesaturatedRed:hsl(0, 36%, 70%);
+$softRed:hsl(0, 93%, 68%);
+$darkGrayishRed:hsl(0, 6%, 24%);
+$font-family: 'Josefin Sans', sans-serif;
+
+span{
+    color: $DesaturatedRed;
+
+}
+body{
+     background: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%) 30.71%),
+            linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) 30.71%);
+}
+.container{
+    font-family: $font-family;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    &__head{
+        margin-left: 2rem;
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    &__img{
+        background-image: url(images/hero-mobile.jpg);
+        background-size: 115%;
+        background-repeat: no-repeat;
+        height: 15rem;
+        width: 20rem;
+        background-position: center;
+    }
+    &__content{
+        text-align: center;
+        margin-bottom: 4rem;
+         .content__txt{
+            .h2{
+                font-size: 2.8rem;
+               letter-spacing: 6px;
+            }
+            .text{
+                color: $DesaturatedRed;
+            }
+        }
+        .content__btn{
+            &.error .fa-exclamation-circle{
+                visibility: visible;
+            }
+            &.error .small{
+                display: block;
+              
+            }
+            &.error .email{
+                border: 2px solid $softRed;
+              
+            }
+            .email{
+                width: 15rem;
+                height: 2rem;
+                border: 1px solid $DesaturatedRed;
+                border-radius: 20px;
+                outline: none;
+                &::placeholder{
+                   padding-left: 2rem;
+                    color: $DesaturatedRed;
+                }
+            }
+            .fa-exclamation-circle{
+               visibility: hidden;
+                position: relative;
+                right: 4rem;
+                border-radius: 20px;
+                border: none;
+                color: $softRed;
+
+            }
+            .send{
+                position: relative;
+                width: 3.5rem;
+                height: 2.3rem;
+                right: 4rem;
+                border-radius: 20px;
+                border: none;
+                background-color: $softRed;
+                color: #fff;
+                cursor: pointer;
+                &:hover{
+                    background-color: $DesaturatedRed;
+                }
+            }
+            .small{
+                display:none;
+                position: relative;
+                right: 4rem;
+                font-weight: none;
+                font-size: 14px;
+                color: $softRed;
+            }
+        }
+    }
+}
+
+//Mobile first
+@media (min-width:600px){
+    .container{
+        &__img{
+            width:24rem;
+            background-size: 100%;
+        }
+        &__content{
+            padding:0rem 5rem 0 5rem;
+        }
+        &__head{
+            .logo{
+                margin-left: 3rem;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:700px){
+    .container{
+        &__content{
+            padding:0rem 7rem 0 7rem;
+        }
+        &__head{
+            .logo{
+                margin-left: 7rem;
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    .container{
+      flex-direction: row;
+      &__head{
+          .logo{
+            position: absolute;
+            left: 34px;
+            margin-left: 0;
+          }
+      }
+      &__content{
+          text-align: left;
+          padding: 0 1rem 0 0 ;
+          transform: translate(-13rem,7rem);
+          width: 21rem;
+          .content__btn{
+              .small{
+                  right: -1rem;
+              }
+          }
+      }
+        &__img{
+            background-image: url(images/hero-desktop.jpg);
+            top: 0px;
+            right: 0;
+            height: 40rem;
+            width: 25rem;
+            position: absolute;
+        }
+    }
+}
+
+@media (min-width:1000px){
+    .container{
+        &__head{
+            .logo{
+                left: 100px;
+            }
+        }
+        &__content{
+            transform: translate(-18rem, 3rem);
+            .content__txt{
+                .h2{
+                    font-size: 3.8rem;
+                }
+            }
+        }
+        &__img{
+            top:0;
+            right: 0;
+            height: 40rem;
+            width: 37rem;
+            }
+    
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        &__head{
+            .logo{
+               left: 137px;
+            }
+        }
+        &__content{
+            transform: translate(-17rem, 3rem);
+        }
+    
+    }
+}

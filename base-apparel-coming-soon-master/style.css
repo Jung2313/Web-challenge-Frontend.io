@@ -1,0 +1,165 @@
+span {
+  color: #ce9797;
+}
+
+body {
+  background: linear-gradient(135deg, white, #fff5f5 30.71%), linear-gradient(135deg, #f8bfbf, #ee8c8c 30.71%);
+}
+
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__head {
+  margin-left: 2rem;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.container__img {
+  background-image: url(images/hero-mobile.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 20rem;
+  background-position: center;
+}
+.container__content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.container__content .content__txt .h2 {
+  font-size: 2.8rem;
+  letter-spacing: 6px;
+}
+.container__content .content__txt .text {
+  color: #ce9797;
+}
+.container__content .content__btn.error .fa-exclamation-circle {
+  visibility: visible;
+}
+.container__content .content__btn.error .small {
+  display: block;
+}
+.container__content .content__btn.error .email {
+  border: 2px solid #f96262;
+}
+.container__content .content__btn .email {
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid #ce9797;
+  border-radius: 20px;
+  outline: none;
+}
+.container__content .content__btn .email::placeholder {
+  padding-left: 2rem;
+  color: #ce9797;
+}
+.container__content .content__btn .fa-exclamation-circle {
+  visibility: hidden;
+  position: relative;
+  right: 4rem;
+  border-radius: 20px;
+  border: none;
+  color: #f96262;
+}
+.container__content .content__btn .send {
+  position: relative;
+  width: 3.5rem;
+  height: 2.3rem;
+  right: 4rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #f96262;
+  color: #fff;
+  cursor: pointer;
+}
+.container__content .content__btn .send:hover {
+  background-color: #ce9797;
+}
+.container__content .content__btn .small {
+  display: none;
+  position: relative;
+  right: 4rem;
+  font-weight: none;
+  font-size: 14px;
+  color: #f96262;
+}
+
+@media (min-width: 600px) {
+  .container__img {
+    width: 24rem;
+    background-size: 100%;
+  }
+  .container__content {
+    padding: 0rem 5rem 0 5rem;
+  }
+  .container__head .logo {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 700px) {
+  .container__content {
+    padding: 0rem 7rem 0 7rem;
+  }
+  .container__head .logo {
+    margin-left: 7rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .container__head .logo {
+    position: absolute;
+    left: 34px;
+    margin-left: 0;
+  }
+  .container__content {
+    text-align: left;
+    padding: 0 1rem 0 0;
+    transform: translate(-13rem, 7rem);
+    width: 21rem;
+  }
+  .container__content .content__btn .small {
+    right: -1rem;
+  }
+  .container__img {
+    background-image: url(images/hero-desktop.jpg);
+    top: 0px;
+    right: 0;
+    height: 40rem;
+    width: 25rem;
+    position: absolute;
+  }
+}
+@media (min-width: 1000px) {
+  .container__head .logo {
+    left: 100px;
+  }
+  .container__content {
+    transform: translate(-18rem, 3rem);
+  }
+  .container__content .content__txt .h2 {
+    font-size: 3.8rem;
+  }
+  .container__img {
+    top: 0;
+    right: 0;
+    height: 40rem;
+    width: 37rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container__head .logo {
+    left: 137px;
+  }
+  .container__content {
+    transform: translate(-17rem, 3rem);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
