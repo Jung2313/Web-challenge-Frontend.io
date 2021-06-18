@@ -1,0 +1,301 @@
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.container__img {
+  width: 100%;
+}
+.container__img .design {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.container__content {
+  font-size: 13px;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.container__content .content__txt {
+  margin-bottom: 2rem;
+}
+.container__content .content__txt .h2 {
+  color: #48556a;
+}
+.container__content .content__txt .text {
+  color: #6d7f97;
+  letter-spacing: 1px;
+}
+.container__content .content__profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  align-items: center;
+}
+.container__content .content__profile .content__photo {
+  width: 80%;
+}
+.container__content .content__profile .content__photo .avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+.container__content .content__profile .content__name .h4 {
+  color: #48556a;
+}
+.container__content .content__profile .content__name small {
+  position: relative;
+  top: -10px;
+  right: -5px;
+  color: #6d7f97;
+}
+.container__content .content__profile .content__button {
+  justify-self: right;
+  z-index: 1;
+}
+.container__content .content__profile .content__button .button {
+  cursor: pointer;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+}
+.container__content .content__profile .content__button .button .fas {
+  margin-left: 6px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #6d7f97;
+  z-index: 1;
+}
+.container .share {
+  display: none;
+  position: absolute;
+  background-color: #6d7f97;
+  width: 77%;
+  padding-bottom: 1rem;
+  transform: translateY(-100px);
+  border-radius: 0 0 20px 20px;
+}
+.container .share__myboton {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 76%;
+  transform: translateY(15px);
+  padding-bottom: 1.5rem;
+}
+.container .share__myboton .h3 {
+  color: #9eafc2;
+}
+.container .share__myboton .fab {
+  font-size: 1.5rem;
+}
+.container .share__myboton .fab:hover {
+  transition: 300ms ease-in;
+  color: #fff;
+}
+.container.sharing .share {
+  display: block;
+}
+.container.sharing .content__button .button {
+  background-color: #9eafc2;
+}
+.container.sharing .content__button .button .fas {
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .container__img .design {
+    height: 15rem;
+  }
+  .container .share {
+    width: 78%;
+    transform: translateY(-102px);
+  }
+  .container .share__myboton {
+    width: 80%;
+  }
+  .container .share__myboton .fab {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 550px) {
+  .container .share {
+    padding-bottom: 2rem;
+    transform: translateY(-117px);
+  }
+  .container .share__myboton {
+    transform: translateY(26px);
+  }
+}
+@media (min-width: 600px) {
+  .container .share__myboton {
+    transform: translateY(20px);
+    width: 82%;
+  }
+}
+@media (min-width: 630px) {
+  .container {
+    width: 75%;
+  }
+  .container .share {
+    width: 73%;
+  }
+}
+@media (min-width: 680px) {
+  .container__content {
+    font-size: 14px;
+  }
+  .container__content .content__txt {
+    margin-bottom: 4rem;
+  }
+  .container__content .content__profile .content__photo .avatar {
+    width: 82%;
+  }
+  .container .share {
+    width: 73.4%;
+  }
+  .container .share__myboton {
+    transform: translateY(27px);
+  }
+}
+@media (min-width: 700px) {
+  .container {
+    width: 70%;
+  }
+  .container .share {
+    width: 68.4%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    width: 87%;
+    display: flex;
+    height: 21.9rem;
+  }
+  .container__img {
+    width: 86%;
+  }
+  .container__img .design {
+    height: 22rem;
+    width: 92%;
+    border-radius: 20px 0 0 20px;
+  }
+  .container__content {
+    font-size: 13px;
+    width: 100%;
+    margin: 2rem 2rem 0 1rem;
+  }
+  .container__content .content__txt {
+    margin-bottom: 3rem;
+  }
+  .container .share {
+    width: 32.4%;
+    right: 8px;
+    bottom: 116px;
+    padding-bottom: 0;
+    border-radius: 10px;
+  }
+  .container .share__myboton {
+    padding-bottom: 0;
+    width: 100%;
+    transform: translateY(1px);
+  }
+  .container .share__myboton .fab {
+    font-size: 1.5rem;
+  }
+  .container .share::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #6d7f97;
+    bottom: -1rem;
+    right: 5.5rem;
+  }
+}
+@media (min-width: 850px) {
+  .container {
+    width: 85%;
+  }
+  .container .share {
+    width: 27.4%;
+    right: 24px;
+  }
+  .container .share::after {
+    right: 5.4rem;
+  }
+}
+@media (min-width: 920px) {
+  .container {
+    width: 80%;
+  }
+  .container .share {
+    right: 36px;
+  }
+  .container .share::after {
+    right: 6.4rem;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 75%;
+  }
+  .container .share {
+    right: 68px;
+  }
+}
+@media (min-width: 1066px) {
+  .container {
+    width: 70%;
+  }
+  .container .share {
+    right: 106px;
+    width: 23.4%;
+  }
+}
+@media (min-width: 1141px) {
+  .container .share {
+    transform: translateY(-130px);
+  }
+  .container .share::after {
+    right: 7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 65%;
+  }
+  .container .share {
+    right: 163px;
+    width: 18.4%;
+  }
+  .container .share::after {
+    right: 6rem;
+  }
+}
+@media (min-width: 1312px) {
+  .container__content {
+    font-size: 14px;
+  }
+  .container .share {
+    right: 182px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
