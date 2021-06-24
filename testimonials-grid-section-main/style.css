@@ -1,0 +1,106 @@
+/*
+Note for text colors:
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf2f8;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.violet {
+  background-color: #7541c8;
+  color: white;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+}
+
+.gray {
+  background-color: #48556a;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #48556a;
+}
+
+.dark {
+  background-color: #19212e;
+  color: white;
+}
+
+.container {
+  margin-top: 3rem;
+  width: 90%;
+}
+.container__content {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+.container__content .wrap {
+  display: flex;
+}
+.container__content .wrap .content__img {
+  margin-right: 1rem;
+}
+.container__content .wrap .content__img .photo {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.container__content .wrap .content__head {
+  transform: translateY(-10px);
+}
+.container__content .wrap .content__head .graduate {
+  opacity: 50%;
+  transform: translateY(-10px);
+}
+.container__content .content__body__text .bodytxt {
+  opacity: 70%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    grid-template-areas: "v v v v v v g p p" "s d d d d d d p p ";
+  }
+  .container__content {
+    margin-bottom: 0;
+  }
+
+  .violet {
+    grid-area: v;
+  }
+
+  .gray {
+    grid-area: g;
+  }
+
+  .position {
+    grid-area: p;
+  }
+
+  .style {
+    grid-area: s;
+  }
+
+  .dark {
+    grid-area: d;
+  }
+
+  .kira {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
