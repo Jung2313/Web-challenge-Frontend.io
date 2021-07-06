@@ -1,0 +1,254 @@
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-size: 18px;
+  text-align: center;
+}
+.container__header {
+  margin-bottom: 4rem;
+}
+.container__header .header {
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 4rem 2rem 4rem;
+}
+.container__header .header__text {
+  padding: 1rem;
+}
+.container__header .header__text .h1 {
+  color: #4c545d;
+}
+.container__header .header__text .text {
+  color: #9fabb2;
+}
+.container__header .header__button {
+  width: 90%;
+  margin: 0 auto;
+}
+.container__header .header__button .design {
+  width: 80%;
+  height: 3rem;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.container__header .header__button .green {
+  background-color: #26baa4;
+}
+.container__header .header__button .green:hover {
+  background-color: #3de6ca;
+}
+.container__header .header__button .blue {
+  background-color: #6173ff;
+}
+.container__header .header__button .blue:hover {
+  background-color: #99a4fa;
+}
+.container__keeptrack {
+  padding: 2rem;
+  text-align: center;
+}
+.container__keeptrack .keep__header .keeph1 {
+  color: #4c545d;
+}
+.container__keeptrack .keep__header .keeptext {
+  color: #9fabb2;
+}
+.container__keeptrack .keep__wrap .keep__img .computer__img {
+  width: 100%;
+}
+.container__keeptrack .keep__wrap .keep__text .keep__h3 {
+  color: #4c545d;
+}
+.container__keeptrack .keep__wrap .keep__text .keep__texto {
+  color: #9fabb2;
+}
+.container__clip {
+  padding: 2rem;
+}
+.container__clip .clip__h1 {
+  color: #4c545d;
+}
+.container__clip .clip__p {
+  color: #9fabb2;
+}
+.container__clip .clip__img .devices__img {
+  width: 100%;
+}
+.container__workflow {
+  padding: 2rem;
+}
+.container__workflow .workflow__header .workflow__h1 {
+  color: #4c545d;
+}
+.container__workflow .workflow__header .workflow__text {
+  color: #9fabb2;
+}
+.container__workflow .workflow__body .workflow__table {
+  margin-top: 3rem;
+}
+.container__workflow .workflow__body .workflow__table .workflow__h3 {
+  color: #4c545d;
+}
+.container__workflow .workflow__body .workflow__table .workflow__text {
+  color: #9fabb2;
+}
+.container__workflow .workflow__company {
+  margin-top: 4rem;
+}
+.container__workflow .workflow__company .workflow__empresa {
+  padding: 2rem;
+}
+.container .footer {
+  background-color: #f5f6f8;
+  padding: 2rem;
+}
+.container .footer__logo .f__logo {
+  text-align: center;
+  width: 70px;
+}
+.container .footer__links ul {
+  padding: 1rem;
+}
+.container .footer__links ul li {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  color: #9fabb2;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.container .footer__links ul li:hover {
+  color: #000;
+}
+.container .footer__socialmedia {
+  font-size: 1.8rem;
+}
+.container .footer__socialmedia .fab {
+  margin: 1rem;
+  color: #4c545d;
+  cursor: pointer;
+}
+.container .footer__socialmedia .fab:hover {
+  color: #797e86;
+}
+
+@media (min-width: 600px) {
+  .container__header .header__text {
+    padding: 1rem 4rem 0 4rem;
+  }
+  .container__keeptrack {
+    padding: 1rem 4rem 0 4rem;
+  }
+  .container__clip {
+    padding: 1rem 4rem 0 4rem;
+  }
+  .container__workflow {
+    padding: 1rem 4rem 0 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .container__header .header__text {
+    padding: 1rem 6rem 0 6rem;
+  }
+  .container__header .header__button {
+    width: 61%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+  .container__header .header__button .design {
+    width: 224px;
+    border-radius: 40px;
+  }
+  .container__keeptrack .keep__wrap {
+    display: flex;
+    height: 23rem;
+    margin-top: 3rem;
+  }
+  .container__keeptrack .keep__wrap .keep__img .computer__img {
+    height: 99%;
+    width: 94%;
+  }
+  .container__keeptrack .keep__wrap .keep__text {
+    font-size: 15px;
+    text-align: left;
+    transform: translateX(27px);
+  }
+  .container__clip {
+    padding: 1rem 6rem 0 6rem;
+  }
+  .container__workflow .workflow__body {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .container__workflow .workflow__body .workflow__table {
+    margin: 10px;
+    width: 36%;
+  }
+  .container__workflow .workflow__body .workflow__table .workflow__h3 {
+    line-height: 34px;
+  }
+  .container__workflow .workflow__body .workflow__table .fix {
+    transform: translateY(-8px);
+  }
+  .container__workflow .workflow__company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container .footer__links {
+    transform: translateY(13px);
+    width: 66%;
+  }
+  .container .footer__links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .container .footer__links ul li {
+    margin-right: 36px;
+  }
+  .container .footer__socialmedia {
+    width: 32%;
+  }
+}
+@media (min-width: 900px) {
+  .container__header .header__button {
+    width: 53%;
+  }
+  .container__keeptrack .keep__wrap .keep__text {
+    font-size: 16px;
+  }
+  .container .footer__links {
+    width: 55%;
+  }
+}
+@media (min-width: 1100px) {
+  .container__keeptrack .keep__wrap .keep__text {
+    font-size: 18px;
+  }
+  .container__header .header__button {
+    width: 43%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
