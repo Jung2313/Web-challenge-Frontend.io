@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+.container__comunity {
+  padding: 2rem;
+  background: #ebfbff;
+  background-image: url(images/bg-hero-mobile.svg);
+}
+.container__comunity header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__comunity header .header__logo {
+  width: 35%;
+}
+.container__comunity header .header__logo .logo {
+  width: 186px;
+}
+.container__comunity header .header__button .button {
+  border: none;
+  height: 2rem;
+  width: 100px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #00252e;
+  font-weight: bold;
+  box-shadow: 0px 0px 3px #808d99;
+  cursor: pointer;
+}
+.container__comunity header .header__button .button:hover {
+  color: #808d99;
+}
+.container__comunity .header__body {
+  margin: 2rem 0 2rem 0;
+}
+.container__comunity .header__body .text__comunity {
+  display: block;
+}
+.container__comunity .header__body .text__comunity .h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.container__comunity .header__body .text__comunity .text__body {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+.container__comunity .header__body .text__comunity .started {
+  height: 2.5rem;
+  border: none;
+  background-color: #ff52bf;
+  width: 65%;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.container__comunity .header__body .text__comunity .started:hover {
+  background-color: #f881cd;
+}
+.container__comunity .header__body .img__body .mockups {
+  width: 100%;
+}
+.container__body__content {
+  margin: 5rem 0 5rem 0;
+  padding: 1rem;
+}
+.container__body__content .body__content__child {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #808d99;
+}
+.container__body__content .body__content__child .child__img {
+  margin: 4rem 0 4rem 0;
+  width: 100%;
+}
+.container__body__content .body__content__child .child__img .contenido {
+  width: 100%;
+}
+.container__body__content .body__content__child .text__child__text .h3 {
+  font-family: "Poppins", sans-serif;
+}
+.container__body__content .body__content__child .text__child__text .child__txt {
+  margin-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #808d99;
+  padding-bottom: 1rem;
+}
+.container .float {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem 0 3rem 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #808d99;
+  transform: translateY(50px);
+  width: 90%;
+  position: relative;
+}
+.container .float .h2__float {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-bottom: 1.3rem;
+}
+.container .float .button__float {
+  height: 2.5rem;
+  border: none;
+  background-color: #ff52bf;
+  width: 65%;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+.container .float .button__float:hover {
+  background-color: #f881cd;
+}
+.container .footer {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  padding: 5rem 1rem 1rem 1rem;
+  color: #fff;
+  background-color: #00252e;
+}
+.container .footer__one {
+  margin-bottom: 2rem;
+}
+.container .footer__one .hundle .colorful {
+  width: 160px;
+}
+.container .footer__one .atext {
+  display: flex;
+}
+.container .footer__one .atext .ext {
+  margin: 1rem 1rem 0 0;
+}
+.container .footer__one .atext .lorem {
+  margin-top: 1rem;
+}
+.container .footer__ul__two .footer__two ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.container .footer__ul__two .footer__two ul li a:hover {
+  border-bottom: 1px solid;
+}
+.container .footer__four {
+  text-align: center;
+}
+.container .footer__four .fab {
+  margin-right: 1rem;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50px;
+}
+.container .footer__four .fab:hover {
+  color: #ff52bf;
+}
+.container .footer__five {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .container__comunity .header__body {
+    display: flex;
+  }
+  .container__comunity .header__body .img__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 244%;
+  }
+  .container__comunity .header__body .text__comunity {
+    margin-right: 1rem;
+    text-align: left;
+  }
+  .container__body__content .body__content__child {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .container__body__content .body__content__child .translate__1 {
+    transform: translateX(244%);
+  }
+  .container__body__content .body__content__child .translate__2 {
+    transform: translateX(-69%);
+  }
+  .container__body__content .body__content__child .text__child__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5rem;
+  }
+  .container__body__content .body__content__child .child__img {
+    margin: 4rem 1rem 4rem 0;
+  }
+  .container__body__content .body__content__child .child__img .contenido {
+    width: 183px;
+  }
+  .container .float {
+    width: 60%;
+  }
+  .container .footer {
+    display: flex;
+    padding-top: 5rem;
+  }
+  .container .footer__one {
+    margin-left: 2rem;
+    width: 52%;
+  }
+  .container .footer__ul__two {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .footer__ul__two .footer__two {
+    margin-right: 2rem;
+  }
+  .container .footer__four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .footer__five {
+    transform: translateY(236px);
+    position: absolute;
+    right: 9px;
+  }
+}
+@media (min-width: 867px) {
+  .container__comunity header .header__logo {
+    width: 24%;
+  }
+  .container__comunity .header__body .text__comunity {
+    margin-right: 3rem;
+  }
+  .container__body__content .body__content__child .text__child__text {
+    margin-left: 3rem;
+  }
+  .container__body__content .body__content__child .child__img .contenido {
+    width: 238px;
+  }
+  .container__body__content .body__content__child .translate__1 {
+    transform: translateX(462px);
+  }
+  .container__body__content .body__content__child .translate__2 {
+    transform: translateX(-270px);
+  }
+  .container .float {
+    width: 58%;
+  }
+  .container .float .button__float {
+    width: 48%;
+  }
+  .container .footer {
+    padding-bottom: 2rem;
+  }
+  .container .footer__one {
+    width: 37%;
+  }
+  .container .footer__ul__two {
+    margin-left: 2rem;
+  }
+  .container .footer__ul__two .footer__two {
+    margin-right: 3rem;
+  }
+  .container .footer__five {
+    transform: translateY(217px);
+  }
+}
+@media (min-width: 910px) {
+  .container__body__content .body__content__child .translate__1 {
+    transform: translateX(512px);
+  }
+}
+@media (min-width: 1000px) {
+  .container__body__content .body__content__child {
+    width: 80%;
+  }
+  .container__body__content .body__content__child .translate__2 {
+    transform: translateX(-300px);
+  }
+  .container .footer__four {
+    width: 25%;
+  }
+}
+@media (min-width: 1100px) {
+  .container__comunity .header__body .img__body .mockups {
+    width: 90%;
+  }
+  .container__body__content .body__content__child .translate__1 {
+    transform: translateX(582px);
+  }
+  .container__body__content .body__content__child .translate__2 {
+    transform: translateX(-343px);
+  }
+  .container .float {
+    width: 55%;
+  }
+  .container .float .button__float {
+    width: 45%;
+  }
+  .container .footer__ul__two {
+    margin-left: 5rem;
+  }
+  .container .footer__ul__two .footer__two {
+    margin-right: 7rem;
+  }
+  .container .footer__ul__two .footer__two ul li {
+    width: 130px;
+  }
+  .container .footer__five {
+    transform: translateY(254px);
+  }
+}
+@media (min-width: 1300px) {
+  .container__body__content .body__content__child .translate__1 {
+    transform: translateX(667px);
+  }
+  .container__body__content .body__content__child .translate__2 {
+    transform: translateX(-428px);
+  }
+  .container .float {
+    width: 48%;
+  }
+  .container .footer__five {
+    transform: translateY(227px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
