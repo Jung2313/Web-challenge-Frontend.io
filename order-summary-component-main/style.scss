@@ -1,0 +1,121 @@
+//Primary 
+$PaleBlue:hsl(225, 100%, 94%);
+$BrightBlue:hsl(245, 75%, 52%);
+
+//Neutral
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue:hsl(224, 23%, 55%);
+$darkBlue:hsl(223, 47%, 23%);
+
+$fontSize:16px ;//paragrah
+
+$fontFamily:'Red Hat Display', sans-serif;
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $PaleBlue;
+    height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: 100%;
+}
+.container{
+    font-family: $fontFamily;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+    &__header__img{ 
+      .hero{
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          font-weight: bold;
+      }
+    }
+    &__content{
+       
+        .content__sumary{
+            .h1{
+                font-size: 25px;
+            }
+            .contentido{
+                font-size: $fontSize;
+                color: $desaturatedBlue;
+                padding:0 2rem 0 2rem
+            }
+        }
+        .plan__anual{
+            padding:1rem;
+            background-color: $veryPaleBlue;
+            display: flex;
+            justify-content: space-between;
+            width:240px;
+            margin: 0 auto;
+
+            .first__box{
+                width:150px;
+                display: flex;
+                justify-content: space-around;
+                .icon__music{
+                    margin-left: 2px;
+                }
+                .anual{
+                    .panual{
+                        color: $darkBlue;
+                        font-size: 15px;
+                    }
+                    .small{
+                        color: $desaturatedBlue;
+                    }
+                }
+            }
+          .second__box{
+              .change{
+                color: $BrightBlue;
+                text-decoration:underline ;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    color: $desaturatedBlue;
+                }
+              }
+          }
+        
+        }
+        .buttons{
+            margin-top: 2rem;
+            .orden{
+                width:80%;
+                height: 2.6rem;
+                border:none;
+                font-family: $fontFamily;
+                 font-weight: bold;
+            }
+            .proceed__pay{
+                margin-bottom: 1rem;
+                background-color: $BrightBlue;
+                border-radius: 10px;
+                color:#fff;
+                box-shadow: 1px 7px 5px 5px $PaleBlue;
+                &:hover{
+                    background-color: $desaturatedBlue;
+                }
+                
+            }
+            .cancel__order{
+                background-color: #fff;
+                color: $desaturatedBlue;
+                cursor: pointer;
+                &:hover{
+                color: $darkBlue;
+                }
+                
+               
+            }
+        }
+    }
+}

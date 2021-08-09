@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e8ff;
+  height: 100vh;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-size: 100%;
+}
+
+.container {
+  font-family: "Red Hat Display", sans-serif;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.container__header__img .hero {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  font-weight: bold;
+}
+.container__content .content__sumary .h1 {
+  font-size: 25px;
+}
+.container__content .content__sumary .contentido {
+  font-size: 16px;
+  color: #7280a7;
+  padding: 0 2rem 0 2rem;
+}
+.container__content .plan__anual {
+  padding: 1rem;
+  background-color: #f5f7ff;
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 auto;
+}
+.container__content .plan__anual .first__box {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.container__content .plan__anual .first__box .icon__music {
+  margin-left: 2px;
+}
+.container__content .plan__anual .first__box .anual .panual {
+  color: #1f2f56;
+  font-size: 15px;
+}
+.container__content .plan__anual .first__box .anual .small {
+  color: #7280a7;
+}
+.container__content .plan__anual .second__box .change {
+  color: #3829e0;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container__content .plan__anual .second__box .change:hover {
+  color: #7280a7;
+}
+.container__content .buttons {
+  margin-top: 2rem;
+}
+.container__content .buttons .orden {
+  width: 80%;
+  height: 2.6rem;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+.container__content .buttons .proceed__pay {
+  margin-bottom: 1rem;
+  background-color: #3829e0;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 1px 7px 5px 5px #e0e8ff;
+}
+.container__content .buttons .proceed__pay:hover {
+  background-color: #7280a7;
+}
+.container__content .buttons .cancel__order {
+  background-color: #fff;
+  color: #7280a7;
+  cursor: pointer;
+}
+.container__content .buttons .cancel__order:hover {
+  color: #1f2f56;
+}
+
+/*# sourceMappingURL=style.css.map */
