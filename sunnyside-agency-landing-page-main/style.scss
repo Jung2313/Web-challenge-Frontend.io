@@ -1,0 +1,630 @@
+$softRed:hsl(7, 99%, 70%);
+$yellow:hsl(51, 100%, 49%);
+//graphic design text
+$darkDesaturatedCyan:hsl(167, 40%, 24%);
+//Photography text
+$darkBlue: hsl(198, 62%, 26%);
+//footer
+$darkModerateCyan:hsl(168, 34%, 41%);
+
+//Neutral
+$veryDarkDesaturatedBlue:hsl(212, 27%, 19%);
+$veryDarkGrayishBlue:hsl(213, 9%, 39%);
+$darkGrayishBlue:hsl(232, 10%, 55%);
+$grayishBlue:hsl(210, 4%, 67%);
+$white:hsl(0, 0%, 100%);
+
+//typography
+//Body copy
+$fontSize:18px;
+$fontFamilyBarlow:'Barlow', sans-serif;
+$fontFamilyFraunces:'Fraunces', serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #90d4c5;
+}
+.container{
+    &__creatives{
+        padding: 2rem;
+        background-image: url(images/mobile/image-header.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 30rem;
+       background-position: center bottom;
+       background-color: #3ebfff;
+        .creative__header{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            .menu{
+                margin-right: 2rem;
+                position: absolute;
+                right: 0;
+               .fas{
+                   cursor:pointer ;
+                   color: $white;
+                   font-size: 1.6rem;
+               }
+            }
+        }
+        .creatives__cont{
+            margin-top: 3rem;
+            text-align:center;
+            .h1{
+            font-family: $fontFamilyFraunces;
+            text-transform:uppercase;
+            color: $white;
+            letter-spacing: 3px;
+            }
+            .icon{
+                margin-top: 2rem;
+            } 
+
+        }
+       .meni__ul{
+        margin-top: 3rem;
+         display: none;
+        position: absolute;
+        text-align: center;
+        padding:2rem;
+        width: 85%;
+        background-color: $white;
+        z-index: 1;
+            &::before{
+                position: absolute;
+                content: "";
+                right: 0;
+                top: -30px;
+                width: 0;
+                height: 0;
+                border-bottom: 100px solid $white;
+                border-left: 100px solid transparent;
+            }
+            li{
+                width: 8rem;
+                font-family: $fontFamilyBarlow;
+                color: $darkGrayishBlue;
+                list-style: none;
+                padding:1rem;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                cursor: pointer;
+                border-radius: 50px;
+                transition:all 500ms ease ;
+                &:hover{
+                    background-color:$yellow ;
+                    color:black;
+                }
+
+            }
+       }
+       .meni__ul.appear{
+           display: block;
+       }
+    }
+    &__grafos{
+        background-color: $white;
+        .grafos__content{
+            width: 100%;
+                .img__final{
+                    background-image: url(images/mobile/image-transform.jpg) ;
+                    height: 19rem;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                }
+                .img__final.glass{
+                    background-image: url(images/mobile/image-stand-out.jpg) ;
+
+                }
+           .grafos__wrap{
+               font-size: $fontSize;
+               padding: 4rem 3rem 4rem 3rem;
+               text-align: center;
+                .h2__grafos{
+                font-family: $fontFamilyFraunces;
+                margin-bottom: 1rem;
+               
+                 }
+                 .p__grafos{
+                 color: $darkGrayishBlue;
+                 margin-bottom: 1rem;
+                 font-family: $fontFamilyBarlow;
+                 }
+                 .learn__more{ 
+                 position: relative;
+                 z-index: 2;
+                 margin: 0 auto;
+                 font-family: $fontFamilyFraunces;
+                 cursor: pointer;
+                }
+                .learn__more.vanilla{
+                position: relative;
+                 height: 8px;
+                 border-radius: 20px;
+                  box-shadow: 0px 15px  hsl(51, 52%, 80%);
+                 width: max-content;
+                 z-index: 1;
+                 &:hover{
+                    box-shadow: 0px 15px  hsl(51, 65%, 58%);
+                 }
+                }
+                .learn__more.vanilla.palette{
+                    box-shadow: 0px 15px  hsl(8, 70%, 82%);
+                    &:hover{
+                        box-shadow: 0px 15px  hsl(8, 78%, 70%); 
+                    }
+                }
+                 
+           }
+        }
+        .grafos__content.cherry{
+                 padding-top: 2rem;
+                background-image: url(images/mobile/image-graphic-design.jpg) ;
+                height: 37rem;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                color: $darkDesaturatedCyan;
+                .cherry__content{
+                    padding: 2rem;
+                    text-align: center;
+                    margin-top: 20rem;
+                    .fruits{
+                        font-family: $fontFamilyFraunces;
+                    }
+                    .fruit__content{
+                        margin-top: 2rem;
+                        font-family: $fontFamilyBarlow;
+    
+                    }
+                }  
+        }
+        .grafos__content.cherry.mandarine{
+            background-image:url(images/mobile/image-photography.jpg); 
+            color: $darkBlue;   
+            }
+    }
+    &__testimonial__client{
+        background-color: $white;
+        padding: 3rem;
+        text-align: center;
+        .h2__client{
+            font-family: $fontFamilyFraunces;
+            color:$veryDarkGrayishBlue ;
+            margin-bottom: 2rem;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .individual__client__wrap{
+            .individual__client{
+                margin-bottom: 3rem;
+                .client__img{
+                    .avatar__client{
+                        border-radius: 50%;
+                        width:65px;
+                    }
+                }
+            }
+            .client__content{
+                .p__test{
+                    font-family: $fontFamilyBarlow;
+                    color: $veryDarkGrayishBlue;
+                    margin:1rem 0 2rem 0;
+                }
+                .p__name{
+                    font-family: $fontFamilyFraunces;
+                }
+                .small__job{
+                    color: $grayishBlue;
+                    font-family: $fontFamilyBarlow;
+                }
+            }
+        }
+    }
+    &__puzzle{
+        flex-wrap: wrap;
+        display: flex;
+        .piece__puzzle{
+            width:50%;
+            .food__puzzle{
+                background-image: url(images/mobile/image-gallery-milkbottles.jpg) ;
+                height:12rem ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+            .food__puzzle.orange{
+                background-image: url(images/mobile/image-gallery-orange.jpg) ;
+            }
+            .food__puzzle.cone{
+                background-image: url(images/mobile/image-gallery-cone.jpg);
+            }
+            .food__puzzle.sugar{
+                background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+            }
+            
+        }
+        .piece__puzzle.translate{
+            transform: translateY(-10px);
+        }
+    }
+    &__footer{
+        text-align: center;
+        padding: 2rem;
+        transform: translateY(-13px);
+        background-color: #90d4c5;
+        color: #2d7665;
+        font-weight: bold;
+        .footer__wrap{
+            .h2__footer{
+                font-family: $fontFamilyFraunces;
+            }
+                ul{
+                    justify-content: center;
+                    display: flex;
+                    padding:1rem;
+                    li{
+                        list-style: none;
+                        margin-right: 1rem;
+                        font-family: $fontFamilyBarlow;
+                        cursor: pointer;
+                        &:hover{
+                            color: $white;
+                        }
+
+                    }
+                }
+                .footer__socialmedia{
+                   
+                    .fab{
+                        margin-top: 2rem;
+                        margin-right: 1rem; 
+                        cursor: pointer;
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+//Mobile First
+
+@media(min-width:450px){
+    .container{
+        &__grafos{
+            .grafos__content{
+                .img__final{
+                    height: 23rem;
+                }
+            }
+            .grafos__content.cherry{
+                .cherry__content{
+                    margin-top: 23rem;
+                }
+            }
+        }
+        &__creatives{
+            .meni__ul{
+                width: 75%;
+                right: 50px;
+            }
+        }
+        &__puzzle{
+            .piece__puzzle{
+                .food__puzzle{
+                    height: 14rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width:480px){
+    .container{
+        &__creatives{
+            background-image: url(images/desktop/image-header.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width:500px){
+    .container{
+        
+        &__creatives{
+           
+            .meni__ul{
+                width: 65%;
+            }
+        }
+        &__grafos{
+            .grafos__content{
+                .img__final{
+                    height: 26rem;
+                }
+            }
+            .grafos__content.cherry{
+                background-image: url(images/desktop/image-graphic-design.jpg);
+                background-color: #96d6c6;
+                height: 30rem;
+                .cherry__content{
+                    margin-top: 16rem;
+                    font-size: 18px;
+                }
+            }
+            .grafos__content.cherry.mandarine{
+                background-image: url(images/desktop/image-photography.jpg);
+                background-color: #65cdff;
+            }
+        }
+        &__puzzle{
+            .piece__puzzle{
+                .food__puzzle{
+                    height: 15rem;
+                }
+            }
+        }
+       
+
+    }
+}
+
+@media(min-width:600px){
+    .container{
+        &__grafos{
+            .grafos__content{
+                .img__final{
+                    height: 31rem;
+                }
+            }
+        }
+        &__puzzle{
+            .piece__puzzle{
+                .food__puzzle{
+                    height: 18rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:700px){
+    .container{
+        .grafos__content{
+            .img__final{
+                height: 37rem;
+            }
+        }
+        &__puzzle{
+            .piece__puzzle{
+                .food__puzzle{
+                    height: 21rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:740px){
+    .container{
+        &__grafos{
+            .grafos__content.cherry{
+                .cherry__content{
+                    margin-top: 18rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px){
+    .container{
+        .meni__ul{
+            li{
+                font-size: 19px;
+            }
+        }
+        &__creatives{
+            .creatives__cont{
+                margin-top: 6rem;
+            }
+            .creative__header{
+                .menu{
+                    display: none;
+                }
+    
+            }
+        }
+            .meni__ul{
+                width: 53%;
+                display: flex;
+                background-color: #3ebfff;
+                top: -48px;
+                padding: 1rem;
+                &::before{
+                  display: none;  
+                }
+                li{
+                   color: $white;
+                   margin-right: 10px;
+                   margin-bottom: 0; 
+                   &:hover{
+                    background-color:$white ;
+                    color:black;
+                }
+                }
+            }
+            
+        
+        
+        &__grafos{
+            display: flex;
+            flex-wrap: wrap;
+            .grafos__content{
+                width: 50%;
+                &:first-child{
+                    background-color: #fed000;
+                }
+                &:nth-child(3){
+                    background-color:#fd7e6d;
+                }
+               .img__final{
+                   background-image: url(images/desktop/image-transform.jpg);
+                   height: 20rem;
+                   
+               } 
+               .img__final.glass{
+                   background-image: url(images/desktop/image-stand-out.jpg);
+               }
+               .grafos__wrap{
+                   text-align: left;
+                   .learn__more{
+                       margin: 0;
+                   }
+               }
+
+            }
+            .grafos__content.egg__move{
+                transform: translateX(100%);
+            }
+            .grafos__content.content__move{
+                transform: translateX(-100%);
+            }
+            .grafos__content.cherry{
+                height: 26rem;
+                .cherry__content{
+                    margin-top: 10rem;
+                }
+            }
+        }
+        &__testimonial__client{
+            .individual__client__wrap{
+                display: flex;
+                
+                .individual__client{
+                    margin: 0 auto;
+                    width: 220px;
+                    .client__content{
+                     .p__name.client__move{
+                        margin-top: 51px;
+                    }
+                 }
+                }
+                
+            }
+        }
+        &__puzzle{
+            flex-wrap: nowrap;
+            .piece__puzzle{
+                .food__puzzle{
+                    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+                    background-size: 100%;
+                    height: 17rem;
+                }
+                .food__puzzle.orange{
+                    background-image: url(images/desktop/image-gallery-orange.jpg);
+                }
+                .food__puzzle.cone{
+                    background-image: url(images/desktop/image-gallery-cone.jpg);
+                }
+                .food__puzzle.sugar{
+                    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+                }
+            }
+            .piece__puzzle.translate{
+                transform: none;
+            }
+        }
+        
+    }
+}
+
+@media(min-width:950px){
+    .container{
+        &__creatives{
+            background-size: 55rem;
+        }
+        &__grafos{
+            .grafos__content{
+                .grafos__wrap{
+                    padding: 7rem 3rem 4rem 3rem;
+                }
+                .img__final{
+                    height: 24rem;
+                }
+            }
+            .grafos__content.cherry{
+                .cherry__content{
+                    margin-top: 12rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1100px){
+    .container{
+        .meni__ul{
+            right: 0;
+        }
+        &__grafos{
+            .grafos__content.cherry{
+                height: 30rem;
+                .cherry__content{
+                    margin-top: 18rem;
+                    padding: 0 5rem 0 5rem;
+                }
+            }
+            .grafos__content{
+                .grafos__wrap{
+                    padding: 8rem 5rem 4rem 5rem;
+                }
+                .img__final{
+                    height: 28rem;
+                }
+            }
+        }
+        &__footer{
+            font-size: 18px;
+        }
+        &__puzzle{
+            .piece__puzzle{
+                .food__puzzle{
+                    height: 25rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:1250px){
+    .container{
+        &__grafos{
+            .grafos__content.cherry{
+                height: 32rem;
+                .cherry__content{
+                    margin-top: 19rem;
+                    padding: 0 6rem 0 6rem;
+                }
+            }
+            .grafos__content{
+                .grafos__wrap{
+                    padding: 10rem 6rem 4rem 6rem;
+                }
+                .img__final{
+                    height: 31rem;
+                }
+            }
+        }
+    }
+}
