@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+</head>
+
+<body>
+  <div class="content__header">
+    <header class="flex header">
+      <!--Tag click-->
+      <input type="checkbox" name="check" id="check">
+      <!--finish-->
+      <div>
+        <img src="images/logo.svg" alt="blogr logo" class="logo">
+      </div>
+
+      <nav class="decoration nav-btn">
+        <ul class="flex2 ">
+          <li class="pr-navigation">
+            <a href="#" class="underline whitebg">Product</a> <img src="images/icon-arrow-light.svg" class="arrow" />
+            <div class="dropdown decoration">
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="pr-navigation">
+            <a href="#" class="underline whitebg">Company</a><img src="images/icon-arrow-light.svg" class="arrow " />
+            <div class="dropdown decoration">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="pr-navigation">
+            <a href="#" class="underline whitebg">Connect</a><img src="images/icon-arrow-light.svg" class="arrow" />
+            <div class="dropdown decoration">
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-right">
+          <button aria-selected="false" class="transparent whitebg">Login</button>
+          <button aria-selected="true" class="btn-white widpa">Sign Up</button>
+        </div>
+      </nav>
+      <div class="hamburger-menu">
+
+      </div>
+
+    </header>
+
+    <div class="textCenter">
+      <h1 class="whitebg mrgbotton ffOverpass fs-700">A modern publishing platform</h1>
+      <p class="whitebg mrgbotton fs-600">Grow your audience and build your online brand</p>
+
+      <button aria-selected="false" class="btn-white mgtop">Start for Free</button>
+      <button aria-selected="true" class="transpa-brd whitebg mgtop">Learn More</button>
+
+    </div>
+  </div>
+  <!--init Design the future-->
+  <article>
+    <h2 class="mrgbotton veryDarkBlueHeading ffUbuntu textCenter fontextra">Designed for the future</h2>
+    <div class="padding-rm grid-container grid-container--designfuture">
+      <div class="editor-img"> </div>
+
+      <div class="blueming">
+        <h3 class="mrgbotton veryDarkBlueHeading fontHeading">Introducing an extensible editor</h3>
+        <p class="ffOverpass fs-400 veryDarkGrayishBluebody liner">Blogr features an exceedingly intuitive interface
+          which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </p>
+
+        <h3 class="mgtop mrgbotton veryDarkBlueHeading fontHeading">Robust content management</h3>
+        <p class="ffOverpass fs-400 veryDarkGrayishBluebody liner">Flexible content management enables users to easily
+          move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+
+    </div>
+    <!--End Design the future-->
+  </article>
+
+  <div class="phones">
+  </div>
+  <article class="rec">
+    <!--State of the art Infrastructure-->
+    <div class="colorful padding-rm ">
+
+      <!--div absolute for the phones-->
+      <div class="grid-container grid--container--royal">
+        <div class="royal ">
+          <h2 class="whitebg">State of the Art Infrastructure</h2>
+          <p class="mgtop whitebg  fs-400 liner">With reliability and speed in mind, worldwide data centers provide the
+            backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--End State of the art Infrastructure-->
+  </article>
+
+  <article>
+    <div class="padding-rm grid-container grid--container--lap">
+      <div class="imgimg"></div>
+      <div class="bmtext">
+        <h3 class="mrgbotton veryDarkBlueHeading fontHeading">Free, open, simple</h3>
+        <p class="ffOverpass fs-400 veryDarkGrayishBluebody liner">Blogr is a free and open source application backed by
+          a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+
+        <h3 class="mgtop mrgbotton veryDarkBlueHeading fontHeading">Powerful tooling</h3>
+        <p class="ffOverpass fs-400 veryDarkGrayishBluebody liner">Batteries included. We built a simple and
+          straightforward CLI tool that makes customization and deployment a
+          breeze, but capable of producing even the most complicated sites.</p>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  <footer class="footer padding-rm flex">
+    <div class="widthth">
+      <img src="images/logo.svg" alt="blogr logo" class="logo2">
+    </div>
+    
+    <nav class="footer-nav flex">
+      <div class="item"> 
+        <h4 class="whitebg mrgbotton">Product</h4>
+        <p>Overview</p>
+        <p>Pricing</p>
+        <p>Marketplace</p>
+        <p>Integrations</p>
+      </div>
+
+      <div class="item">
+        <h4 class="whitebg mrgbotton">Company</h4>
+        <p>About</p>
+        <p>Team</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+
+      <div class="item">
+        <h4 class="whitebg mrgbotton">Connect</h4>
+        <p>Contact</p>
+        <p>Newsletter</p>
+        <p>LinkedIn</p>
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
