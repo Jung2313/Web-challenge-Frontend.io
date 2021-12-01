@@ -1,0 +1,132 @@
+:root{
+    /*Primary*/
+    --softBlue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    /*Neutral*/
+    --veryDarkBlueMain:hsl(217, 54%, 11%);
+    --veryDarkBlueCard:hsl(216, 50%, 16%);
+    --veryDarkBlueLine:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    --ffsize:18px;
+    --ffamily:'Outfit', sans-serif;
+}
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 400;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+.flex{
+   display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+body{
+    font-family: var(--ffamily);
+    background-color: var(--veryDarkBlueMain);
+    
+}
+.ffsize{
+    font-size: var(--ffsize);
+}
+.pading{
+padding: 1rem;
+}
+.margintop{
+    margin-top: 1rem; 
+}
+.marginbutton{
+    margin-bottom: 1rem; 
+}
+.container{
+    background-color: var(--veryDarkBlueCard);
+   
+    width: 350px;
+    border-radius: 20px;
+}
+.cubo{
+    width: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+.red{
+    position: relative;
+}
+.red:hover  .blue{
+    display: block;
+    cursor: pointer;
+}
+.blue{
+    display: none;
+    position: absolute;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 315px;
+    z-index: 100;
+    text-align: center;
+    border-radius: 10px;
+    top: 0;
+    background-position: center;
+    background-color:var(--cyan) ;
+    filter: opacity(60%);
+    transition: 500ms all ease-in-out;
+}
+.h1{
+ font-size: 25px;
+ color: var(--white);
+}
+.h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.color{
+    border-top: 1px solid var(--softBlue);
+}
+.pclas{
+    color: var(--softBlue);
+}
+.alib{
+    justify-content:space-between ;
+}
+.cyan{
+    color: var(--cyan);
+    margin-left: 5px;
+}
+.cyan1{
+    color: var(--white);
+}
+.cyan1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.sofblue{
+    color:var(--softBlue) ;
+    margin-left: 5px;
+}
+.avatar{
+    width: 50px;
+    outline: 1px solid var(--white);
+    border-radius: 50%;
+}
+.leftt{
+    justify-content: start;
+}
+.marginleft{
+    margin-left: 1rem;
+}
