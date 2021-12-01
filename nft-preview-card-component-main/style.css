@@ -38,7 +38,7 @@ input,button,textarea,select {
 body{
     font-family: var(--ffamily);
     background-color: var(--veryDarkBlueMain);
-    
+    height: 100vh;
 }
 .ffsize{
     font-size: var(--ffsize);

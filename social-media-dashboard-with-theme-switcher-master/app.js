@@ -1,9 +1,10 @@
 const button = document.querySelector('.slide');
 
 button.addEventListener("click", () => {
+
+    
     document.body.classList.toggle('light');
     button.classList.toggle('active');
-
     //LocalStorage for keeping the light mode and dark mode
     if (document.body.classList.contains('light')) {
         localStorage.setItem('light-mode', 'true');
