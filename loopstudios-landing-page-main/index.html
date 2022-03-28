@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+
+<body>
+  <div class="container ">
+    <header class="header">
+      <div class="header_child flex">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo-company">
+        </div>
+        <div class="hamburguer">
+          <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="burger">
+        </div>
+      </div>
+
+
+      <!--Menu-->
+      <div class="menu pad2rem">
+        <div class="menu__header flex">
+          <img src="images/logo.svg" alt="logo-company" class="logo-menu">
+          <img src="images/icon-close.svg" alt="close-icon" class="close">
+        </div>
+
+        <ul class="menu_body flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <!--Fin Menu-->
+      <div class="wrap pad2rem flex">
+        <div class="pad2rem header_contxt">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+
+    </header>
+    <!--part 2 img + grid + text-->
+    <section class="container-avator-box grid">
+      <div class="avatar"></div>
+
+      <div class="textbox grid">
+        <h2 class="h2">The leader in interactive VR</h2>
+        <p class="p">Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.</p>
+      </div>
+    </section>
+
+    <section class="photos_creators pad2rem">
+      <h2 class="h2_images">Our creations</h2>
+      <div class="img">
+        <div class="content_img deepEarth"><span class="labelImg">Deep earth</span></div>
+        <div class="content_img nightArcade"><span class="labelImg">Night arcade</span></div>
+        <div class="content_img soccerTeam"><span class="labelImg">Soccer team VR</span></div>
+        <div class="content_img theGrid"><span class="labelImg labelGrid">The grid</span></div>
+        <div class="content_img fromUp"><span class="labelImg">From up above VR</span></div>
+        <div class="content_img pocketBorealis"><span class="labelImg">Pocket borealis</span></div>
+        <div class="content_img theCuriosity"><span class="labelImg">The curiosity</span></div>
+        <div class="content_img makeFisheye"><span class="labelImg">Make it fisheye</span></div>
+      </div>
+      <button class="seeAll">See all</button>
+    </section>
+
+    <footer class="footer pad2rem">
+      <section class="footerLogoMenu">
+        <img src="images/logo.svg" alt="logo" class="logoFooter">
+        <ul class="menuFooter pad2rem">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </section>
+      <section class="footerFinal">
+
+        <div class="socialMedia pad2rem">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <span class="copy">© 2021 Loopstudios. All rights reserved.</span>
+      </section>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
