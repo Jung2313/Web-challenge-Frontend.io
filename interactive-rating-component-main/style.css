@@ -1,0 +1,145 @@
+/*Reset*/
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body, h1, h2, h3, h4, h5, p, figure, picture {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 100;
+}
+
+/* make images easier to work with */
+img, picture {
+  display: block;
+}
+
+/* make form elements easier to work with */
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121417;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 10px;
+  width: 85%;
+  background-color: #202731;
+}
+
+.imageStar {
+  margin-bottom: 1rem;
+  width: min-content;
+}
+
+.imageStar .star {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #272e38;
+}
+
+.psel {
+  padding: 1rem 0 1rem 0;
+  color: #7c8798;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 2rem 0;
+  align-items: center;
+}
+
+.btn .btnNumber {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #272e38;
+  border: none;
+  color: #7c8798;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.btn .btnNumber:hover {
+  background-color: #959eac;
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+
+.btn .btnNumber:focus {
+  color: white;
+  background-color: #fb7413;
+}
+
+.btnSumit {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  background-color: #fb7413;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btnSumit:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+.btnSumit:checked {
+  color: #fb7413;
+  background-color: white;
+}
+
+.sectionSecond {
+  text-align: center;
+}
+
+.sectionSecond .ilustaciontThankYou {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.sectionSecond .spam {
+  margin: 0 auto;
+  background-color: #272e38;
+  color: #fb7413;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 60px;
+}
+
+.sectionSecond .h2 {
+  margin-top: 1rem;
+}
+
+.sectionSecond.hidden {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 425px;
+  }
+}

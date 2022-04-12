@@ -1,0 +1,146 @@
+//PRIMARY
+$orange:hsl(25, 97%, 53%);
+
+//Neutral
+$white:hsl(0, 0%, 100%);
+$lightGrey:hsl(217, 12%, 63%);
+$mediumGrey:hsl(216, 12%, 54%);
+$darkBlue:hsl(213, 19%, 18%);
+$veryDarkBlue:hsl(216, 12%, 8%);
+
+$fontSize:15px;
+$fontFamily:'Overpass', sans-serif;
+
+/*Reset*/
+
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:$veryDarkBlue ;
+    color: $white;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+
+}
+
+.hidden{
+    display: none;
+}
+.container{
+    padding: 2rem;
+    border-radius: 10px;
+    width: 85%;
+    background-color:#202731 ;
+}
+.imageStar{
+    margin-bottom: 1rem;
+    width: min-content;
+    .star{
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #272e38;
+    }
+}
+.psel{
+    padding: 1rem 0 1rem 0;
+    color:$mediumGrey ;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0 2rem 0;
+    align-items: center;
+    .btnNumber{
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #272e38;  
+        border: none;
+        color:$mediumGrey;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+    
+        
+        cursor: pointer;
+        &:hover{
+            background-color: $lightGrey;
+            color: white;
+            transition: all 500ms ease-in-out;
+        }
+        &:focus{
+            color: white;
+            background-color:$orange;
+        }
+    }
+}
+.btnSumit{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color:$orange;
+    letter-spacing: 2px;
+    cursor: pointer;
+    &:hover{
+        color: $orange;
+        background-color:white ;
+    }
+    &:checked{
+        color: $orange;
+        background-color:white ;
+    }
+}
+
+//Second
+.sectionSecond{
+    text-align: center;
+    .ilustaciontThankYou{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .spam{
+        margin: 0 auto;
+        background-color: #272e38;
+        color:$orange ;
+        padding: 0.5rem;
+        width: 80%;
+        border-radius: 60px;
+    }
+    .h2{
+        margin-top: 1rem;
+    }
+}
+.sectionSecond.hidden{
+    display: none;
+}
+
+//Media Queries
+@media(min-width:500px){
+    .container{
+        width: 425px;
+    }
+}
