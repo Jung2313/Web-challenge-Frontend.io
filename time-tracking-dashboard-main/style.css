@@ -1,0 +1,512 @@
+:root {
+    /*Primary*/
+    --blue: hsl(246, 80%, 60%);
+    /*Work*/
+    --light-red-work: hsl(15, 100%, 70%);
+    /*Play*/
+    --soft-blue-play: hsl(195, 74%, 62%);
+    /*study*/
+    --light-red-study: hsl(348, 100%, 68%);
+    /*exercise*/
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    /*social*/
+    --violet-social: hsl(264, 64%, 52%);
+    /*self care*/
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+
+    /*Neutral*/
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+
+    /*card titles e.g. Work, Play*/
+    --font-size: 18px;
+    --font-family: 'Rubik', sans-serif;
+}
+
+/*Reset*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 100;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+
+}
+
+.container {
+    font-family: var(--font-family);
+    color: var(--pale-blue);
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-wrap-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-container {
+    position: relative;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    width: 85%;
+}
+
+.report-wrap {
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.reporter-profile {
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+}
+
+.white {
+    color: #ffff;
+}
+
+.image-jeremy {
+    width: 25%;
+    border-radius: 50%;
+    outline: 3px solid #ffff;
+}
+
+.profile-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .3rem;
+    font-size: var(--font-size);
+}
+
+
+.schedule {
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.content-wrap {
+    border-radius: 10px;
+    width: 85%;
+    overflow: hidden;
+    height: 11rem;
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+
+}
+
+
+.content:hover {
+    background-color: hsl(235, 50%, 33%);
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding: 2rem;
+    transform: translateY(-35px);
+    height: 100%;
+
+}
+
+.context {
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.time {
+    margin-top: .5rem;
+    justify-content: space-between;
+}
+
+.time .white {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.work-color {
+    background-color: var(--light-red-work);
+    background-image: url(images/icon-work.svg);
+}
+
+.play-color {
+    background-color: var(--soft-blue-play);
+    background-image: url(images/icon-play.svg);
+}
+
+.study-color {
+    background-color: var(--light-red-study);
+    background-image: url(images/icon-study.svg);
+}
+
+.exercise-color {
+    background-color: var(--lime-green-exercise);
+    background-image: url(images/icon-exercise.svg);
+
+}
+
+.social-color {
+    background-color: var(--violet-social);
+    background-image: url(images/icon-social.svg);
+}
+
+.self-care-color {
+    background-color: var(--soft-orange-self-care);
+    background-image: url(images/icon-self-care.svg);
+}
+
+.daily:hover,
+.weekly:hover,
+.monthly:hover,
+.ellipsis:hover {
+    cursor: pointer;
+    color: #ffff;
+}
+
+
+@media (min-width:500px) {
+    .content-wrap {
+        width: 75%;
+    }
+
+    .report-container {
+        width: 75%;
+    }
+}
+
+@media (min-width:600px) {
+    .content-wrap {
+        width: 60%;
+    }
+
+    .report-container {
+        width: 60%;
+    }
+}
+
+@media (min-width:700px) {
+    .content-wrap {
+        width: 50%;
+    }
+
+    .report-container {
+        width: 50%;
+    }
+}
+
+/*Grid sections*/
+@media (min-width:800px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-content: center;
+        place-items: center;
+        margin: 0 auto;
+        height: 12rem;
+    }
+
+    .content-wrap-wrap {
+        display: grid;
+        grid-template-areas: "work play study"
+            "exercise social selfcare";
+        gap: 1rem;
+        width: 40rem;
+    }
+
+    .work-color {
+        grid-area: work;
+    }
+
+    .play-color {
+        grid-area: play;
+    }
+
+    .study-color {
+        grid-area: study;
+    }
+
+    .exercise-color {
+        grid-area: exercise;
+    }
+
+    .social-color {
+        grid-area: social;
+    }
+
+    .self-care-color {
+        grid-area: selfcare;
+    }
+
+
+    .report-container {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+        transform: translateX(3rem);
+    }
+
+
+    .content-wrap {
+        width: 11rem;
+        height: 13rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .schedule {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .white {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+
+    .week {
+        font-size: 13px;
+    }
+
+    .time {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .3rem;
+    }
+
+    .ellipsis {
+        width: 15px;
+    }
+
+    .reporter-profile {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .image-jeremy {
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+    .jeremy-name {
+        color: #ffff;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+}
+@media (min-width:850px){
+    .report-container{
+        width: 12rem;
+    }
+   
+}
+@media (min-width:900px){
+     .content-wrap{
+        width: 12rem;
+    }
+    .report-container{
+        transform: translateX(33px);
+    }
+}
+
+@media(min-width:920px){
+    .report-container{
+        transform: translateX(34px);
+        
+    }
+    .report-container{
+        width: 13rem;
+    }
+    img{
+        max-width: 72px;
+    }
+    .content-wrap-wrap{
+        width: 43rem;
+    }
+    .content-wrap{
+        width: 12.8rem;
+    }
+}
+@media(min-width:963px){
+    .container {
+        width: 55rem;
+    }
+}
+
+
+@media(min-width:1000px) {
+    .container {
+        width: 55rem;
+    }
+
+    .schedule {
+        font-size: 18px;
+    }
+
+    .time .white {
+        font-size: 2.5rem;
+    }
+
+    .white {
+        font-size: 21px;
+        margin-top: 12px;
+    }
+
+    .ellipsis {
+        width: 17px;
+    }
+    .report-container{
+        width: 14rem;
+        transform: translateX(7px);
+    }
+    .content-wrap{
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media(min-width:1100px){
+    .report-container{
+        width: 15rem;
+        transform: translateX(-20px);
+    }
+    .content-wrap{
+        width: 15rem;
+    }
+}
+
+
+@media(min-width:1200px) {
+    .container {
+        width: 60rem;
+    }
+    .report-container{
+        width: 16rem;
+        transform: translateX(-45px);
+    }
+    .content-wrap{
+        width: 16rem;
+    }
+    .week{
+        font-size: 15px;
+    }
+    .white{
+        margin-top: 15px;
+    }
+
+   
+}
