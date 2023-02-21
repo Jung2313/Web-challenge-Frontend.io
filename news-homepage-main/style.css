@@ -1,0 +1,331 @@
+:root{
+    /*Primary*/
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed:hsl(5, 85%, 63%);
+    /*Neutral*/
+    --offWhite:hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue:hsl(236, 13%, 42%);
+    --veryDarkBlue:hsl(240, 100%, 5%);
+    --fontSize:15px;
+    --fontFamily: 'Inter', sans-serif;
+}
+.font-size{
+    font-size: var(--fontSize);
+    color:var(--darkGrayishBlue) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluit{
+    padding: 1.5rem;
+    font-family: var(--fontFamily);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.fade{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.6);
+}
+.hamburger{
+    cursor: pointer;
+}
+.nav-bar{
+    position: fixed;
+    z-index: 10;
+    left: 40%;
+    top: 0%;
+    right: 0;
+    height: 100vh;
+    background-color: var(--offWhite);
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: transform 500ms ease-in-out
+}
+.nav-bar.open-menu{
+    transform: translateX(0%);
+}
+
+
+.close-icon{
+    position: absolute;
+    right:15%;
+    top: 4%;
+    cursor: pointer;
+}
+.nav-ul{
+    cursor: pointer;
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   transform: translateY(7rem);
+ 
+}
+.nav-ul li:hover,
+h3:hover {
+    color: var(--softOrange); 
+     transition: all 500ms ease;
+}
+
+.container{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "lego"
+    "title"
+    "info"
+    "article"
+    "computerRetro"
+    "topLaptop"
+    "growthGaming";
+    gap: 1rem;
+    
+}
+.img-lego{
+    background: url(assets/images/image-web-3-mobile.jpg)no-repeat center;
+    background-size: cover;
+    width: 20.5rem;
+    height: 17rem;
+    grid-area: lego;
+}
+.h1{
+    font-weight: bolder;
+    font-size:2.5rem;
+    line-height: 2.5rem;
+    grid-area: title;
+}
+.p-wrap{
+    grid-area: info;
+}
+button{
+    width: fit-content;
+    padding: 1rem 2rem 1rem 2rem;
+    letter-spacing: 5px;
+    text-transform:uppercase ;
+    color: var(--offWhite);
+    border: none;
+    background-color: var(--softRed);
+    font-weight: bolder;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+button:hover{
+    background-color: var(--veryDarkBlue);
+}
+article{
+    margin-top: 2rem;
+    background-color: var(--veryDarkBlue);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    grid-area: article;
+}
+h2{
+    color:var(--softOrange)
+}
+h3{
+    color: var(--offWhite);
+    cursor: pointer;
+}
+.section-news{
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.section-news:last-child{
+    border-top: 1px solid #646464;
+}
+.section-news:first-of-type{
+    border-bottom: 1px solid #646464;
+}
+.more-news{
+  display: flex;
+  gap: 1rem;
+}
+.pcs-information{
+    width: 8rem;
+    height: 9rem;
+
+}
+.pclass{
+line-height: 1.5rem;
+}
+.read{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.pcs-information{
+    width: 8rem;
+}
+.information{
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    flex-direction: column;
+    gap: .5rem;
+}
+.numbers{
+    color: var(--grayishBlue);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bold;
+    cursor: pointer;
+}
+.bolder:hover{
+    color: var(--softRed);
+    transition: all 500ms ease;
+}
+.computer-retro{
+    grid-area: computerRetro;
+}
+.top-laptop{
+    grid-area: topLaptop;
+}
+.growth-gaming{
+    grid-area: growthGaming;
+}
+
+
+@media(min-width:400px){
+    .img-lego{
+        width: 22rem;
+    }
+}
+@media(min-width:425px){
+    .img-lego{
+        width: 23rem;
+    }
+    .container-fluit{
+        width: 26rem;
+        margin: 0 auto;
+    }
+    .container{
+        width: 23rem;
+        margin: 0 auto;
+    }
+}
+@media(min-width:500px){
+    .close-icon{
+        right:19%;
+        top: 3%;
+    }
+}
+
+
+@media(min-width:600px){
+    .img-lego{
+        width: 26rem;
+    }
+    .container-fluit{
+        width: 30rem;
+    }
+    .container{
+        width: 26rem;
+    }
+}
+
+@media(min-width:600px){
+    .img-lego{
+        width: 29rem;
+    }
+    .container-fluit{
+        width: 32rem;
+    }
+    .container{
+        width: 29rem;
+    }
+}
+@media(min-width:700px){
+    .close-icon{
+        right:30%;
+        top: 3%;
+    }
+}
+
+
+@media(min-width:800px){
+    .container-fluit{
+    width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .img-lego{
+        background: url(assets/images/image-web-3-desktop.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+       
+    }
+    .container{
+        grid-template-areas: 
+        "lego lego article"
+        "lego lego article"
+        "title info article"
+        "computerRetro topLaptop growthGaming";
+    }
+    .pcs-information{
+        width: 6.5rem;
+        height: 12rem;
+    }
+    article{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+/*Menu expandido*/
+.hamburger,
+.close-icon{
+    display: none;
+}
+.nav-bar{
+    transform: translateX(0);
+    height: auto;
+    position: relative;
+    left: 0;
+}
+.nav-ul{
+      flex-direction: row; 
+      transform: translateY(0);
+    padding: 0;
+    gap: 2.5rem;
+}
+
+}
+@media(min-width:900px){
+    .pcs-information{
+        height: 10rem;
+    }
+}
+@media(min-width:1100px){
+    .pcs-information{
+        height: 8rem;
+    }
+    .container{
+        gap: 2rem;
+        width: 65rem;
+    }
+   
+    header
+    {margin: 0 auto;
+        width: 65rem;
+        margin-bottom: 1rem;
+    }
+}
