@@ -1,0 +1,532 @@
+/*Styles*/
+:root {
+    /*Primary*/
+    /*Active input border*/
+    --linearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    /*input errors*/
+    --red: hsl(0, 100%, 66%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 3%, 87%);
+    --darkGrayishViolet: hsl(279, 6%, 55%);
+    --veryDarkViolet: hsl(278, 68%, 11%);
+
+    /*Typography*/
+
+    --fontSize: 18px;
+
+    /*Font family*/
+
+
+    --fontFamily: 'Space Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+.card-bg {
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    background: url(images/bg-main-mobile.png);
+
+}
+
+.main-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.formulario {
+    margin-top: 3rem;
+
+}
+
+.credit-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-bottom: .6rem;
+}
+
+.input-form {
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid rgb(214, 212, 212);
+    width: 100%;
+}
+
+input::placeholder {
+    color: var(--darkGrayishViolet);
+}
+
+.code,
+.credit-code-wrap {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#expDateMM,
+#expDateYY {
+    width: 5rem;
+}
+.expireDateyy{
+    width: 6rem;
+}
+.credit-cvc {
+    width: 5rem;
+}
+
+#cvc {
+    width: 8.4rem;
+    margin-top: 0.5rem;
+    margin-left: 1.4rem;
+}
+.credit-cvc label{
+    margin-left: 1.5rem;
+}
+.send,
+.continue-final {
+    width: 100%;
+    padding: .9rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--veryDarkViolet);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.small-letter {
+    font-size: 10px;
+    margin-top: 8px;
+    color: var(--red);
+}
+
+.expireDate {
+    position: absolute;
+    top: 2.4rem;
+
+}
+
+.credit-code-wrap {
+    position: relative;
+}
+
+.cvcNumber {
+    width: 10rem;
+    margin-left: 2rem;
+}
+
+/*Credit card */
+.back-card-cont {
+    width: 20.2rem;
+    transform: translate(8%, 13%);
+    margin: 0 auto;
+
+}
+
+.back-card-wrap {
+    background: url(images/bg-card-back.png) no-repeat;
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    background-size: 20rem;
+
+
+}
+
+.credit-back-number {
+    position: absolute;
+    right: 2.5rem;
+    top: 67px;
+    font-size: 12px;
+    color: var(--lightGrayishViolet);
+}
+
+.front-card-wrap {
+    background: url(images/bg-card-front.png) no-repeat;
+    width: 20rem;
+    height: 11.1rem;
+    background-size: 20rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(-13%, -62%);
+    margin: 0 auto;
+}
+
+.card-logo-logo {
+    width: 4rem;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    color: var(--lightGrayishViolet);
+    text-transform: uppercase;
+}
+
+.content-front-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.credit-front-number {
+    color: var(--white);
+    font-size: 19px;
+}
+
+
+.name,
+.caducidad-mm,
+.slass,
+.caducidad-yy {
+    font-size: 10px;
+}
+
+.red-danger{
+    outline: 1px solid var(--red);
+}
+.red-danger:focus{
+    outline: none
+}
+
+input:focus{
+   border-width: 1px;
+   border-style: solid;
+   border-image: linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%))
+}
+
+.expireDatemm{
+    position: absolute;
+    transform: translate(0px,30px);
+}
+
+.credit-code-wrap{
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.expireDateyy{
+    position: absolute;
+    top:2.2rem;
+    left: 7rem;
+}
+/* Final modal */
+.last-final-wrap{
+display: none;
+}
+
+
+
+.last-modal-thanks{
+   display: flex;
+    margin-top: 5rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.thanks{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.plast{
+    color: var(--darkGrayishViolet);
+    font-size: 16px;
+}
+.continue-final{
+    margin: 2rem;
+}
+
+
+
+@media (min-width:450px) {
+    .main-content {
+        width: 31rem;
+        margin: 0 auto;
+    }
+
+    #cvc {
+        width: 12.6rem;
+    }
+}
+
+
+
+/*Desktop format*/
+@media (min-width:768px) {
+
+    .container {
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .card-bg {
+        height: 100vh;
+        background-image: url(images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        width: 34%;
+        background-size: 30rem
+    }
+
+    .formulario {
+        transform: translateX(80px);
+    }
+
+    * {
+        font-size: 12px;
+    }
+
+    .back-card-cont {
+        width: 23.2rem;
+        transform: translate(26%, 190%);
+    }
+
+    .back-card-wrap {
+        width: 27rem;
+        height: 15.1rem;
+        background-size: 27rem;
+        border-radius: 10px;
+    }
+
+    .credit-back-number {
+        top: 78px;
+    }
+
+    .front-card-wrap {
+        width: 27rem;
+        height: 15rem;
+        background-size: 27rem;
+        transform: translate(6%, -30%);
+        border-radius: 10px;
+    }
+
+    .content-front-card {
+        margin-bottom: 0.8rem;
+    }
+    .expireDatemm{
+        transform: translate(0px,28px);
+    }
+
+    .main-content {
+        width: 38rem;
+        margin: 36px auto;
+        height: 33rem;
+    }
+
+    .formulario {
+        transform: translate(140px, 86px);
+    }
+
+    .input-form {
+        width: 67%;
+    }
+
+    #cvc {
+        width: 7rem;
+        margin-left: 0rem;
+    }
+
+    .send {
+        width: 69%;
+    }
+    .last-modal-thanks{
+        width: 25rem;
+        margin: 100px 120px;
+    }
+    .code,
+    .credit-code-wrap {
+        gap: 2rem;
+       
+    }
+    #expDateMM, #expDateYY {
+        width: 6rem;
+      }
+      .expireDateyy {
+        top: 2.3rem;
+        left: 8rem;
+        width: 7rem;
+      }
+      .credit-cvc label {
+        margin-left: 0rem;
+      }
+      .cvcNumber {
+        width: 9rem;
+        margin-left: 0rem;
+      }
+}
+
+@media(min-width:900px) {
+    * {
+        font-size: 13px;
+    }
+
+    .card-bg {
+        width: 33%;
+    }
+
+    .back-card-wrap {
+        width: 30rem;
+        height: 17rem;
+        background-size: 30rem;
+    }
+
+    .credit-back-number {
+        top: 94px;
+        right: 3.2rem;
+        font-size: 15px
+    }
+    .expireDatemm{
+        transform: translate(0px,30px);
+    }
+
+    .front-card-wrap {
+        width: 30rem;
+        height: 17rem;
+        background-size: 31rem;
+        transform: translate(6%, -61%);
+    }
+
+    .credit-front-number {
+        font-size: 25px;
+    }
+
+    .formulario {
+        transform: translate(155px, 65px);
+    }
+
+    .back-card-cont {
+        transform: translate(26%, 155%);
+    }
+    .last-modal-thanks{
+       
+        margin: 100px 150px;
+    }
+
+}
+
+@media(min-width:1000px) {
+    .card-bg {
+        width: 30%;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    .credit-back-number {
+        top: 103px;
+    }
+    .expireDatemm{
+        transform: translate(0px,40px);
+    }
+    .name,
+    .caducidad-mm,
+    .slass,
+    .caducidad-yy {
+        font-size: 12px;
+    }
+
+    .input-form {
+        width: 68%;
+    }
+
+    .back-card-cont {
+        transform: translate(37%, 142%);
+    }
+
+    .front-card-wrap {
+        transform: translate(15%, -72%);
+    }
+
+    .formulario {
+        transform: translate(176px, 38px);
+    }
+
+    .credit-front-number {
+        font-size: 31px;
+    }
+
+    .card-logo-logo {
+        width: 5rem;
+        margin-top: 1rem;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+
+    .input-form {
+        padding: .8rem;
+    }
+    .last-modal-thanks{
+        margin: 100px 200px;
+    }
+    .expireDateyy {
+        top: 2.9rem;
+      }
+      .cvcNumber{
+        margin-left: 0.3rem;
+      }
+
+}
+
+@media(min-width:1200px) {
+    #cvc {
+        width: 7.5rem;
+    }
+
+    .send {
+        width: 73%;
+    }
+
+    .card-bg {
+        width: 30%;
+    }
+
+    .formulario {
+        transform: translate(157px, 38px);
+    }
+
+    .back-card-cont {
+        transform: translate(57%, 142%);
+    }
+    .front-card-wrap{
+        transform: translate(28%,-72%);
+    }
+}
+@media(min-width:1300px){
+    .back-card-cont{
+        transform: translate(58%,142%);
+    }
+    .front-card-wrap{
+        transform: translate(31%,-72%);
+    }
+    .formulario{
+        transform: translate(150px,38px);
+    }
+}
+
+
+/*Recuerda que debe ser optimo hasta la pantalla 1440px*/

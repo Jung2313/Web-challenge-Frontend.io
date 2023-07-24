@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card-bg">
+      <!--Crear un div Lo necesitamos para las letras-->
+      <!--Cree un padre para que no se mueva el hijo mientras se agranda la pantalla-->
+      <div class="back-card-cont">
+        <div class="back-card-wrap">
+          <p class="credit-back-number">000</p>
+        </div>
+      </div>
+
+      <!--Aqui hay que poner la parte trasera del la credit card-->
+      <div class="front-card-wrap">
+        <div class="header-front-card">
+          <img src="images/card-logo.svg" alt="card-logo" class="card-logo-logo">
+        </div>
+        <div class="content-front-card">
+          <p class="credit-front-number">0000 0000 0000 0000</p>
+          <div class="name-date">
+            <p class="name">Jane Appleseed</p>
+            <div class="extra">
+              <span class="caducidad-mm">00</span><span>/</span><span class="caducidad-yy">00</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+    
+    </div>
+    
+    <main class="main-content">
+      <!--Crear un div lo necesitamos para las letras-->
+      <!--Form-->
+      <form class="formulario ">
+        <div class="credit-input">
+          <label for="carholder">CARHOLDER NAME</label>
+          <input type="text" name="carholder" id="carholder" placeholder="e.g. Jane Appleseed" class="input-form " maxlength="20"/>
+          <p class="small-letter charName"></p>
+        </div>
+
+        <div class="credit-input">
+          <label for="cardNumber">CARD NUMBER</label>
+          <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" class="input-form" />
+          <p class="small-letter cardNumb"></p>
+        </div>
+
+        <div class="code">
+          <div class="credit-code">
+            <label for="expDateMM">EXP. DATE (MM/YY)</label>
+            <div class="credit-code-wrap">
+              <input type="text" name="expDateMM" id="expDateMM" placeholder="MM" class="input-form" maxlength="2" />
+              <input type="text" name="expDateYY" id="expDateYY" placeholder="YY" class="input-form" maxlength="2" />
+              <p class="small-letter  expireDatemm"></p>
+              <p class="small-letter  expireDateyy"></p>
+            </div>
+          </div>
+
+          <div class="credit-cvc">
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" class="input-form"  maxlength="3"/>
+            <p class="small-letter cvcNumber"></p>
+          </div>
+        </div>
+
+        <button class="send">Confirm</button>
+      </form>
+        <!--Thank you modal-->
+        <div class="last-final-wrap">
+          <div class="last-modal-thanks">
+          <img src="images/icon-complete.svg" alt="icon-complete" class="complete-check">
+          <span class="thanks">THANK YOU!</span>
+          <p class="plast">We've added your card details</p>
+          <button  class="continue-final">Continue</button>
+        </div>
+        </div>
+        
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
