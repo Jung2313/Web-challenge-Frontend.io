@@ -1,0 +1,413 @@
+/*Reset*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 100;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+:root {
+    /*Color primary*/
+    --tomato: hsl(4, 100%, 67%);
+    /*Neutral*/
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    /*body paragraph copy*/
+    --font-size: 16px;
+    --font-family-roboto: 'Roboto', sans-serif;
+}
+
+.container-wrapper {
+    font-family: var(--font-family-roboto);
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold
+}
+
+.image-sign-up {
+    width: 100%;
+    height: 20rem;
+    background: url(assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.content-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    font-size: var(--font-size);
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.check-mate {
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    margin-left: 1rem;
+}
+
+.checking {
+    width: 1.4rem;
+    transform: translateY(-5px);
+
+}
+
+#checking {
+    transform: translateY(0px);
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.email-txt {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.contact-email {
+    margin-top: .5rem;
+    padding: .7rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+}
+.contact-email:active,
+.contact-email:focus{
+    outline: none;
+}
+.subscribe,
+.btn-dismiss-final{
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--charcoalGrey);
+    cursor: pointer;
+   
+    
+}
+.btn-dismiss-final{
+    margin: 0 auto;
+}
+.subscribe:hover,
+.btn-dismiss-final:hover{
+    background: rgb(233,38,60);
+    background: linear-gradient(90deg, rgba(233,38,60,1) 0%, rgba(255,45,45,1) 0%, rgba(255,0,131,1) 100%); 
+}
+.error{
+    background-color: hsl(4, 64%, 91%);
+    color: var(--tomato);
+    border: 1px solid var(--tomato) ;
+}
+.invalidemail{
+    position: absolute;
+    right: 0;
+    color: var(--tomato);
+    font-weight: bold;
+    font-size: 13px;
+}
+/*Escondiendo el primer div*/
+
+/*Thanks success*/
+
+.submit-message-container{
+    background-color: var(--white);
+    font-family: var(--font-family-roboto);
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+
+.content-message{
+    padding: 2rem;
+}
+.h1-speed{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.btn-dismiss-final{
+    position: absolute;
+    width: 90%;
+    bottom: 1rem;
+    left: 6%;
+}
+.success-email{
+    font-weight: bold;
+}
+
+/*Media Queries*/
+
+@media (min-width:376px) {
+    .image-sign-up {
+        width: 121%;
+        background-size: 83%;
+        background-position: 0% 1%;
+        height: 20rem;
+    }
+
+}
+
+@media (min-width:420px) {
+    .image-sign-up {
+
+        height: 23rem;
+    }
+ .submit-message-container{
+    width: 24rem;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width:500px) {
+    .image-sign-up {
+        width: 114%;
+        background-size: 88%;
+        background-position: 0% 96%;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .image-sign-up {
+        width: 114%;
+        background-size: 88%;
+        background-position: 0% -83%;
+        height: 29rem;
+    }
+}
+
+/*Cambiar a modo desktop desde 601px*/
+
+@media (min-width:611px) {
+    body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .container-wrapper {
+        margin-top: 5rem;
+        margin-left:2rem ;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "content content img img";
+        background-color: var(--white);
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    
+    .content-txt{
+        grid-area: content;
+    }
+    .image-sign-up{
+    grid-area: img;
+    background: url(assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    width: 105%;
+    margin-top: 2rem;
+    
+    }
+    body{
+        background-color:var(--darkSlateGrey) ;
+    }
+    .content-txt{
+        margin-top: 3rem;
+    }
+    .check{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .subscribe{
+        font-size: 15px;
+    }
+    .submit-message-container{
+        height: 29rem;
+        border-radius: 2rem;
+        width: 29rem;
+    }
+    .content-message{
+        padding: 3rem;
+    }
+    .h1-speed{
+        font-size: 3rem;
+    }
+    .btn-dismiss-final{
+        width: 80%;
+        bottom: 3rem;
+        left: 10%;
+    }
+
+}
+@media (min-width:634px) {
+    .image-sign-up{
+        margin-top: 1rem;
+    }
+}
+@media(min-width:650px){
+    .image-sign-up{
+        background-size: 92%;
+    }
+}
+@media (min-width:675px){
+    .container-wrapper{
+        height: 33rem;
+    }
+    .check{
+        margin-top: 1rem;
+    }
+    .subscribe{
+        font-size: 16px;
+    }
+    .image-sign-up{
+        height: 100%;
+    }
+}
+
+@media (min-width:730px){
+    .container-wrapper{
+        height: 35rem;
+    }
+    .content-txt{
+        margin-left: 1.7rem;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .check{
+        margin-bottom: 1.3rem;
+    }
+
+}
+
+@media (min-width:780px){
+    .image-sign-up{
+        background-size: 22.5rem;
+        background-position: 6px 0px;
+    }
+    .content-txt{
+        margin-left: 2.5rem;
+    }
+}
+@media(min-width:800px){
+.image-sign-up{
+    background-size: 22.1rem;
+    background-position: 22px 0px;
+}
+}
+
+@media (min-width:830px){
+    .image-sign-up{
+        background-position: 37px 0px;
+    }
+}
+@media (min-width:855px){
+    .container-wrapper{
+        width: 52rem;
+    }
+    .image-sign-up{
+        background-position: 46px 0px;
+    }
+    h1{
+        font-size: 54px;
+    }
+    .checking{
+        transform: translateY(2px);
+    }
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sign-up form start -->
+  <div class="container">
+    <div class="container-wrapper">
+      <div class="image-sign-up"></div>
+      <main class="content-txt">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="check">
+          <div class="check-mate">
+            <img src="/assets/images/icon-list.svg" alt="" class="checking">
+            <span class="product">Product discovery and building what matters</span>
+          </div>
+          <div class="check-mate">
+            <img src="/assets/images/icon-list.svg" alt="" class="checking">
+            <span class="product">Measuring to ensure updates are a success</span>
+          </div>
+          <div class="check-mate">
+            <img src="/assets/images/icon-list.svg" alt="" class="checking" id="checking">
+            <span class="product">And much more!</span>
+          </div>
+        </div>
+        <div class="email-txt">
+          <label for="email">Email address</label>
+          <p class="invalidemail"></p>
+          <input type="text" placeholder="email@company.com" name="email" id="email" class="contact-email" />
+          <button class="subscribe">Subscribe to monthly newsletter</button>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!--The second div-->
+  <div class="submit-message-container">
+    <div class="content-message">
+      <img src="assets/images/icon-success.svg" alt="icon-success" class="sucess">
+      <h1 class="h1-speed">Thanks for subscribing!</h1>
+      <p class="parragraph">
+        A confirmation email has been sent to <span class="success-email"> </span>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <div class="btn-dismiss">
+      <button class="btn-dismiss-final">Dismiss message</button>
+    </div>
+  </div>
+
+  <script src="newsletter.js"></script>
+</body>
+
+</html>
