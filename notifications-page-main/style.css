@@ -72,13 +72,14 @@ textarea {
 body{
     font-size: var(--fontSize);
     font-family: var(--fontFamilyPlusJakarta);
-    background-color: var(--lightGrayishBlue1);
+    background-color: var(--white);
    
 }
 
 .container{
     padding: 1rem; 
     background-color: var(--white);
+    box-shadow: -1px 2px 5px 5px var(--lightGrayishBlue1);
 }
 
 .header__content{
