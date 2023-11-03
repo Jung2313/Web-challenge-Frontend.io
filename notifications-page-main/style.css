@@ -1,0 +1,217 @@
+/*Reset*/
+
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+
+:root{
+   /*Colors Primary*/
+   --red: hsl(1, 90%, 64%);
+   --blue:hsl(219, 85%, 26%);
+
+   /*Colors Neutral*/
+   --white:hsl(0, 0%, 100%);
+   --veryLightGrayishBlue:hsl(210, 60%, 98%);
+   --lightGrayishBlue1:hsl(211, 68%, 94%);
+   --lightGrayishBlue2:hsl(205, 33%, 90%);
+   --grayishBlue:hsl(219, 14%, 63%);
+   --darkGrayishBlue:hsl(219, 12%, 42%);
+   --veryDarkBlue:hsl(224, 21%, 14%);
+
+   /*Typography body paragraph*/
+   --fontSize:16px;
+   --fontFamilyPlusJakarta:'Plus Jakarta Sans', sans-serif;
+}
+body{
+    font-size: var(--fontSize);
+    font-family: var(--fontFamilyPlusJakarta);
+    background-color: var(--lightGrayishBlue1);
+   
+}
+
+.container{
+    padding: 1rem; 
+    background-color: var(--white);
+}
+
+.header__content{
+    margin: 1rem 0rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notification{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.noti{
+    font-weight: 600;
+    font-size: 21px;
+}
+.three__noti{
+    background-color: var(--blue);
+    padding: .2rem .8rem .2rem .8rem ;
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: 600;
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.section__comments,
+.avatar__message{
+   
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10px;
+    
+}
+/*Efecto color*/
+.section__toggle{
+    background-color: var(--veryLightGrayishBlue); 
+    box-shadow: 2px 2px 5px var(--lightGrayishBlue1);
+}
+.avatar__profile{
+    width: 3rem;
+    height: 3rem;
+}
+.fa-circle{
+    margin-left: .2rem;
+    color: var(--red);
+    font-size: 10px;
+}
+.bolder__name{
+    font-weight: bold;
+    color: var(--veryDarkBlue);
+    margin-right: .4rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.bolder__name:hover,
+.very__darkcolor:hover{
+    color: var(--blue);
+}
+.gray__color1{
+    color: var(--darkGrayishBlue);
+}
+
+.very__darkcolor{
+    margin-left: .3rem;
+    font-weight: 600;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.blue__color{
+    color: var(--blue);
+    font-weight: 600;
+    margin-left: .3rem;
+    cursor: pointer;
+}
+.small{
+    margin-top: .2rem;
+    color: var(--grayishBlue);
+    
+}
+.message__content{
+    outline: 1px solid var(--lightGrayishBlue1);
+    margin-left: 5rem;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 14px;
+}
+.kimberly__chess{
+width: 3rem;
+}
+.message__content{
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.message__content:hover{
+    background-color: var(--lightGrayishBlue2);
+}
+.mark__toogle{
+   cursor: pointer;
+   transition: all 500ms ease;
+}
+.mark__toogle:hover{
+    color: var(--blue);
+}
+/*Ocultando la notificacion*/
+.section__toggle.read{
+    background-color: var(--white);
+    box-shadow: none;
+}
+
+@media (min-width:472px){
+    .section__comments{
+        position: relative;
+    }
+    .kimberly__chess{
+        position: absolute;
+        right: 3px;
+    }
+}
+@media (min-width:622px){
+    .container{
+        width: 38rem;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
