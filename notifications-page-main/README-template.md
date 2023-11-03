@@ -43,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Jung2313/Web-challenge-Frontend.io/tree/master/notifications-page-main)
+- Live Site URL: [Add live site URL here](https://notificationface.netlify.app/)
 
 ## My process
 
