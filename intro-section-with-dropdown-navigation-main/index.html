@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <!--Desktop First-->
+  <div class="container">
+    <header class="header">
+      <img src="images/logo.svg" alt="logo-icon" class="logo-icon">
+      <!--Nav-->
+      <nav class="nav-wrap">
+        <img src="images/icon-close-menu.svg" alt="close-menu" class="close-menu">
+        <ul class="ul-links">
+          <div class="dropdown-wrap">
+            <a href="#">Features<img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down"></a>
+            <div class="display-wrap">
+
+              <div class="display dropdown">
+                <div class="dropdown-list">
+                  <img src="images/icon-todo.svg" alt="icon-todoli" class="icon-list">
+                  <span class="list-dropdown">Todo List</span>
+                </div>
+                <div class="dropdown-list">
+                  <img src="images/icon-calendar.svg" alt="icon-todoli" class="icon-list">
+                  <span class="list-dropdown">Calendar</span>
+                </div>
+
+                <div class="dropdown-list">
+                  <img src="images/icon-reminders.svg" alt="icon-todoli" class="icon-list">
+                  <span class="list-dropdown">Reminders</span>
+                </div>
+
+                <div class="dropdown-list">
+                  <img src="images/icon-planning.svg" alt="icon-todoli" class="icon-list">
+                  <span class="list-dropdown">Planning</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown-wrap">
+            <a href="#">Company<img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down"></a>
+            <div class="display-wrap">
+
+              <div class="display dropdown-2">
+                <span class="list-dropdown">History</span>
+                <span class="list-dropdown">Our Team</span>
+                <span class="list-dropdown">Blog</span>
+              </div>
+            </div>
+
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </ul>
+
+        <div class="login-register">
+          <span class="login1">Login</span>
+          <span class="registrarse">Register</span>
+        </div>
+      </nav>
+      <!---->
+      <img src="images/icon-menu.svg" alt="menu-icon" class="menu no-showup">
+    </header>
+
+    <main class="main-content">
+      <section class="content-main-text">
+        <h1 class="h1-title">Make remote work</h1>
+        <p class="paragraph">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="learn-more">Learn more</button>
+        <div class="sponsors">
+          <img src="images/client-databiz.svg" alt="client-databiz-icon">
+          <img src="images/client-audiophile.svg" alt="client-audiophile-icon">
+          <img src="images/client-meet.svg" alt="client-meet-icon">
+          <img src="images/client-maker.svg" alt="client-maker-icon">
+        </div>
+      </section>
+      <section class="img-main">
+        <!--imagen introducida por css-->
+      </section>
+    </main>
+
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
