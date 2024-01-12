@@ -496,6 +496,7 @@ body {
         padding-top: 5rem;
        background-color: var(--almostWhite);
         z-index: 1;
+        height: 100%;
     }
     .nav-wrap.close-tab{
         display: block;
