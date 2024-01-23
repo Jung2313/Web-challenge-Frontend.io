@@ -192,7 +192,6 @@ body {
     align-items: center;
     padding-right: 1rem;
 }
-
 .img-main {
     background-image: url(images/image-hero-desktop.png);
     background-repeat: no-repeat;
@@ -583,6 +582,9 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+    .container{
+        overflow: hidden;
+    }
 }
 
 @media (max-width:750px){
@@ -667,6 +669,11 @@ body {
     .content-main-text{
         width: 92%;
     }
+    .sponsors{
+        width: 23%;
+        margin-left: 8.5rem;
+    }
+    
    
 }
 @media(max-width:400px){
@@ -682,6 +689,15 @@ body {
     .nav-wrap{
         width: 62%;
     }
+    .sponsors img {
+        width: 69%;
+    
+    }
+    .sponsors{
+        width: 29%;
+        margin-left: 7rem;
+    }
+   
     
 }
 
@@ -689,6 +705,7 @@ body {
     .content-main-text {
      transform: translateY(-27px);
     }
+   
 }
 @media(max-width:375px){
     .img-main{
