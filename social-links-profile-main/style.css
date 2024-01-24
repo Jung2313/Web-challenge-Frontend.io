@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors Primary*/
+    --green:hsl(75, 94%, 57%);
+    /*Colors Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --grey:hsl(0, 0%, 20%);
+    --darkGrey:hsl(0, 0%, 12%);
+    --offBlack:hsl(0, 0%, 8%);
+    /*Typography body copy*/
+    --fontSize:14px;
+    --fontFamileInter:'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    background-color:var(--offBlack) ;
+    color: var(--white);
+    font-size: var(--fontSize);
+    font-family: var(--fontFamileInter);
+}
+.container{
+    background-color: var(--darkGrey);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 83%;
+}
+
+.green{
+    color: var(--green);
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 5rem;
+}
+.country{
+    margin-top: .5rem;
+    font-size: 12.5px;
+}
+.user-name,
+.profession{
+    margin-top: 1rem;
+}
+.links{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.links:hover{
+    cursor:url(/assets/images/handspointer.png), pointer;
+}
+.box-links{
+    font-weight: bold;
+    padding-block: .8rem;
+    border-radius: 10px;
+    background-color: var(--grey);
+    transition: all 500ms ease-in-out;
+    
+}
+.box-links:hover{
+    background-color: var(--green);
+    color: var(--darkGrey);
+    cursor:url(/assets/images/handspointer.png), pointer;
+}
+
+@media(min-width:500px){
+    .container{
+        width: 26rem;
+    }
+}
