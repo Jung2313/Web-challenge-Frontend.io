@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    /*Color primary*/
+    --yellow:hsl(47, 88%, 63%);
+     /*Color neutral*/
+    --white:hsl(0, 0%, 100%);
+    --grey:hsl(0, 0%, 50%);
+    --black:hsl(0, 0%, 7%);
+    /*Body copy*/
+    --fontSize:15px;
+    --fontFamilyFigtree:'Figtree', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: var(--yellow);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 1.3rem 1rem; 
+    border-radius: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    font-family: var(--fontFamilyFigtree);
+    box-shadow: 8px 8px 0px var(--black);
+}
+
+.img-field img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+button{
+    border: none;
+    background-color: var(--yellow);
+    padding:.4rem .7rem;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
+}
+.sectionContent{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title{
+    font-size: 23px;
+    transition: all 500ms ease-in-out; 
+}
+.pfp{
+  font-weight: bolder;  
+}
+.title:hover{
+    color: var(--yellow);
+    cursor: url(assets/images/handcursor.png), pointer;
+    
+}
+p{
+font-size: var(--fontSize);
+color: var(--grey);
+line-height: 1.5rem;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-top: 1.5rem;
+}
+.profile img{
+    width: 2rem;
+}
+
+@media(min-width:400px){
+    .container{
+        width: 22.4rem;
+    }
+}
