@@ -186,5 +186,6 @@ td:last-child {
     .container {
         margin: 0 auto;
         width: 45rem;
+        margin-bottom: 2rem;
     }
 }
