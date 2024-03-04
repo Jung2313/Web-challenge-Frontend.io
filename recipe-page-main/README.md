@@ -88,7 +88,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 **Have fun building!** 🚀
 
-Link to the demo live : 
+Link to the demo live : https://recipemain.netlify.app/
 
 
 
