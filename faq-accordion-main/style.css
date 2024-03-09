@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /*Colors */
+  --white: hsl(0, 0%, 100%);
+  --lightPink: hsl(275, 100%, 97%);
+  --grayishPurple: hsl(292, 16%, 49%);
+  --darkPurple: hsl(292, 42%, 14%);
+  /*Typography body copy paragraphs*/
+  --fontSize: 16px;
+  --familyWorkSans: "Work Sans", sans-serif;
+}
+
+body {
+  font-family: var(--familyWorkSans);
+}
+
+main {
+  background-color: var(--lightPink);
+}
+
+.header {
+  width: 100%;
+  height: 14rem;
+  background: url(assets/images/background-pattern-mobile.svg) no-repeat;
+  background-size: 100%;
+}
+
+.main-content {
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  width: 90%;
+  min-width: 21rem;
+  margin: 0 auto;
+  transform: translateY(-7rem);
+  box-shadow: 0px 15px 45px -22px rgba(0, 0, 0, 0.44);
+}
+
+.faqs-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.star-icon {
+  width: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  font-size: var(--fontSize);
+  color: var(--grayishPurple);
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  display: none;
+}
+.paragraph.display{
+  display: block;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+hr {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.qas {
+  width: 80%;
+  transition: all ease-in-out 500ms;
+  cursor: url(/assets/images/handcursor.png), pointer;
+}
+.qas:hover{
+ color: #ad28eb;
+}
+
+.image-plus-minus {
+  width: 10%;
+  height: 2rem;
+  background-position: right;
+  background: url(assets/images/icon-plus.svg) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 500px) {
+  .header {
+    background: url(/assets/images/background-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 15rem;
+
+  }
+}
+@media(min-width:660px){
+  .main-content{
+    width: 37.1rem;
+  }
+  .star-icon{
+    width: 2rem;
+  }
+}
