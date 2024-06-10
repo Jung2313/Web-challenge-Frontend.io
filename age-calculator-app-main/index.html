@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <form class="poppins-bold">
+      <div class="container-form">
+        <label for="day" class="red">DAY</label>
+        <input type="text" id="day" class="day inputs-in poppins-bold " maxlength="2" name="day" placeholder="DD">
+        <span class="error poppins-extrabold-italic"></span>
+      </div>
+      <div class="container-form">
+        <label for="month" class="red">MONTH </label>
+        <input type="text" id="month" name="month" class="month inputs-in poppins-bold " maxlength="2" placeholder="MM">
+        <span class="error poppins-extrabold-italic"></span>
+      </div>
+      <div class="container-form">
+        <label for="year" class="red">YEAR</label>
+        <input type="text" id="year" maxlength="4" name="year" class="year inputs-in poppins-bold" placeholder="YYYY">
+        <span class="error poppins-extrabold-italic"></span>
+      </div>
+
+    </form>
+
+    <section class="arrow-secti">
+      <div class="icon-arrow">
+        <img src="assets/images/icon-arrow.svg" alt="icon-arrow">
+      </div>
+      <hr>
+    </section>
+
+
+    <section class="results poppins-extrabold-italic">
+      <div class="content">
+        <span class="resultYear purple">--</span>
+        <span class="result-content">years</span>
+      </div>
+
+      <div class="content">
+        <span class="resultMonths purple">--</span>
+        <span class="result-content">months</span>
+      </div>
+
+      <div class="content">
+        <span class="resultDays purple">--</span>
+        <span class="result-content">days</span>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
