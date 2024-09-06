@@ -283,6 +283,14 @@ small {
     .result-totalPerson {
         font-size: 2rem;
     }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+   
 }
 
 @media (min-width:800px){
