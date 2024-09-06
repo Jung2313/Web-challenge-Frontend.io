@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <img src="images/logo.svg" alt="logo-icon" class="logo">
+  </header>
+
+  <main class="container">
+    <section class="bill-section-wrap">
+      <div class="bill">
+        <label for="billselect">Bill</label>
+        <input type="text" name="billselect" id="billselect" class="input-bill" min="1" placeholder="0" />
+        <img src="images/icon-dollar.svg" alt="dollar-icon" class="dollar-icon">
+      </div>
+
+      <div class="select-tip-wrap">
+        Select Tip %
+        <div class="select-btn">
+        <button class="percent-tip" data-percent="5">5%</button>
+        <button class="percent-tip" data-percent="10">10%</button>
+        <button class="percent-tip" data-percent="15">15%</button>
+        <button class="percent-tip" data-percent="25">25%</button>
+        <button class="percent-tip" data-percent="50">50%</button>
+        <input type="text" placeholder="Custom" class="custom"/>
+      </div>
+    </div>
+      <div class="number-people">
+        <label for="number-person">Number of People</label>
+        <small class="typerror"></small>
+        <input type="text" placeholder="0" name="number-person" id="number-person" class="number-of-people" />
+        <img src="images/icon-person.svg" alt="icon-person" class="person-icon">
+      </div>
+    </section>
+
+    <section class="amount-section-wrap">
+        <div class="tip-amount">
+          <div class="div-tip-cal">
+            <p>Tip Amount  </p>
+            <small>/ person</small>
+          </div>
+          <p class="result-tipAmount"><span>$</span>0.00 </p> 
+        </div>
+
+        <div class="total-person">
+          <div class="div-tip-cal">
+          <p>Total</p> <small>/ person</small> 
+          </div>
+          <p class="result-totalPerson"><span>$</span>0.00 </p>
+        </div>
+
+        <button class="reset" disabled>RESET</button>
+    </section>
+  </main>
+  <script src="tipcalculator.js"></script>
+</body>
+
+</html>
