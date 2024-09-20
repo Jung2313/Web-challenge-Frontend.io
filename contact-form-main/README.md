@@ -1,6 +1,6 @@
 # Frontend Mentor - Contact form
 
-Link to the live demo:
+Link to the live demo: https://contactformap.netlify.app/
 
 
 
