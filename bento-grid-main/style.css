@@ -1,0 +1,312 @@
+:root {
+    --purple100: hsl(254, 88%, 90%);
+    --purple500: hsl(256, 67%, 59%);
+    --yellow100: hsl(31, 66%, 93%);
+    --yellow500: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+    --fontSize: 18px;
+    --fontFamily: "DM Sans", sans-serif;
+}
+
+.yellow {
+    color: var(--yellow500);
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fontFamily);
+    background-color: hsl(0, 7%, 97%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    color: var(--white);
+    background-color: var(--purple500);
+    text-align: center;
+}
+
+.social-media-title {
+    font-size: 3rem;
+    font-weight: 500;
+    width: 17rem;
+}
+
+.img-five-stars {
+    width: 11rem;
+}
+
+.insta-xwrap {
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--purple100);
+    background-color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    padding: .5rem;
+    position: relative;
+}
+
+.img-multiple-platforms {
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.schedule-calendar {
+    padding: 1rem 1rem 0 1rem;
+    background-color: var(--yellow500);
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+.schedule-calendar strong {
+    width: 18rem;
+}
+
+.img-consistent-schedule {
+    width: 12rem;
+
+}
+
+.schedule-week-media {
+    background-color: var(--purple100);
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.schedule-week-media strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.schedule-week-media p {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.grow-followers {
+    gap: 1rem;
+    background-color: var(--purple500);
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.grow-followers strong {
+    width: 13rem;
+    margin: 0 auto;
+}
+
+.audience {
+    box-shadow: 0px 0px 10px var(--purple100);
+    background-color: var(--white);
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.audience span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.img-audience-growth {
+    width: 9rem;
+}
+
+.create-post {
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--yellow100);
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.img-create-post {
+    width: 10rem;
+}
+
+.message {
+    background-color: var(--yellow500);
+    padding: 1rem;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.img-ai-content {
+    width: 15rem;
+}
+
+@media (min-width:409px) {
+    .container {
+        width: 88%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:500px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (min-width:600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        display: grid;
+        width: 90%;
+        text-align: center;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 24rem 26rem 11rem 23rem;
+        grid-template-areas:
+            "createPost socialMedia"
+            "scheduleWeekMedia message"
+            "instaxwrap scheduleCalendar"
+            "audience growFollowers"
+        ;
+        margin: 2rem auto;
+        place-content: center;
+    }
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .create-post {
+        grid-area: createPost;
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .social-media {
+        grid-area: socialMedia;
+    }
+
+    .schedule-week-media {
+        grid-area: scheduleWeekMedia;
+    }
+
+    .message {
+        grid-area: message;
+    }
+
+    .insta-xwrap {
+        grid-area: instaxwrap;
+    }
+
+    .schedule-calendar {
+        grid-area: scheduleCalendar;
+        overflow-y: hidden;
+    }
+
+    .audience {
+        grid-area: audience;
+    }
+
+    .grow-followers {
+        grid-area: growFollowers;
+    }
+
+    img {
+        width: 15rem;
+        margin: 0 auto;
+    }
+
+    .schedule-calendar strong {
+        margin: 0 auto;
+    }
+
+    .create-post strong {
+        width: 11rem;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:900px) {
+    .container {
+        grid-template-rows: 24rem 24rem 11rem 23rem;
+        width: 80%;
+    }
+}
+
+@media (min-width:1000px) {
+    .container {
+        grid-template-columns: 15rem 13rem 14rem 13rem;
+        grid-template-rows: 20rem 3rem 10rem 13rem;
+        width: 90%;
+        grid-template-areas:
+            "createPost socialMedia socialMedia scheduleWeekMedia"
+            "createPost instaxwrap scheduleCalendar scheduleWeekMedia"
+            "message instaxwrap scheduleCalendar scheduleWeekMedia"
+            "message audience  growFollowers growFollowers"
+    
+    }
+    .insta-xwrap{
+        overflow: hidden;
+        padding: 1rem
+    }
+    .img-multiple-platforms{
+        width: 19rem;
+    }
+    .schedule-calendar{
+        width: 14rem;
+    }
+    .schedule-calendar strong{
+        width: 11rem;
+        text-align: left;
+    }
+    .schedule-week-media{
+        overflow: hidden;
+    }
+    .grow-followers{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-ai-content{
+        width: 13rem;
+    }
+    .img-schedule-posts{
+        width:152%
+    }
+    .img-grow-followers{
+        width: 14rem;
+        height: 10rem;
+    }
+
+   
+}
