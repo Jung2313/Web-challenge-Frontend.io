@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main>
+    <header>
+      <section class="header-title">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </section>
+    </header>
+    <section class="card-form">
+        <span class="pages"></span>
+        <div class="slider">
+          <input type="range" id="range" min="0" max="4" value="2" step="1">
+        </div>
+        <div class="div">
+          <small class="prices">$16.00</small>
+          <small class="variable"></small>
+        </div>
+
+      <div class="checked-monthly-and-year">
+        <small>Monthly Billing</small>
+        <input type="checkbox" id="toggle" class="toggle">
+        <div class="discount-yearly">
+          <small>Yearly Billing</small>
+          <span></span>
+        </div>
+      </div>
+      <hr>
+      <div class="section-unlimited">
+        <div class="section-text">
+
+
+          <div class="icon-text">
+            <img src="images/icon-check.svg" alt="">
+            <p>Unlimited websites</p>
+          </div>
+
+          <div class="icon-text">
+            <img src="images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </div>
+
+          <div class="icon-text">
+            <img src="images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <button class="btn-start">Start my trial</button>
+      </div>
+
+
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
