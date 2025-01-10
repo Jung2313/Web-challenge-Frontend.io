@@ -419,5 +419,7 @@ hr {
   .prices{
     font-size: 35px;
   }
-
+  .header-title p {
+    width: 25rem;
+  }
 }
