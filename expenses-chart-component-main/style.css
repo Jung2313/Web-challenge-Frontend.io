@@ -1,0 +1,132 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  /*Colors Primary*/
+  --softRed:  hsl(10, 79%, 65%);
+  --cyan:hsl(186, 34%, 60%);
+  /*Neutral*/
+  --darkBrown:hsl(25, 47%, 15%);
+  --mediumBrown:hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --veryPaleOrange:hsl(33, 100%, 98%);
+  /*Typography body copy*/
+  --fontSize:18px;
+  --fontFamilyDMSans: "DM Sans", serif;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamilyDMSans);
+    background-color: var(--cream);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 95%;
+    min-width: 22rem;
+}
+
+.header{
+    background-color: var(--softRed);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--veryPaleOrange);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 3.5rem;
+}
+.title{
+    font-size: 14px;
+}
+.price{
+    font-size: 1.5rem;
+}
+.content{
+    background-color: var(--veryPaleOrange);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.balance-graphic-wrap{
+    display: flex;
+    margin-block: 1rem;
+    gap: .5rem;
+}
+.balance-graphic-content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.balance-text{
+    color: var(--veryPaleOrange);
+    background-color: var(--darkBrown);
+    width: fit-content;
+    padding:.4rem ;
+    font-size: 8.5px;
+    border-radius: 5px;
+  opacity: 0;
+  transition:  all 500ms ease-in-out
+}
+
+.balance-increment-size{
+    width: 2.4rem;
+    background-color:var(--softRed);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.balance-increment-size:hover{
+    background-color: blue;
+}
+
+.days{
+    color: var(--mediumBrown);
+}
+
+hr{
+    border: 1px solid rgb(247, 243, 243);
+}
+.total{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.total-small,
+.percent{
+    font-size: 12px;
+    color: var(--mediumBrown);
+    font-weight:lighter;
+    
+}
+.total-price{
+   font-size: 1.9rem; 
+}
+.incre{
+    text-align: right;
+    font-size: 13px;
+}
+
+@media (min-width:400px){
+    .balance-graphic-content{
+        position: relative;
+        width: 100%;
+    }
+}
+@media(min-width:420px){
+    .container{
+        width: 25rem;
+    }
+}
